@@ -1,32 +1,27 @@
-name: Deploy docs
+name: Deploy MkDocs site
 
 on:
   push:
     branches:
-      - master
+      - main
+  workflow_dispatch:
 
 jobs:
-  build-deploy:
-    name: Build and deploy to GH Pages
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Set up Python 3.x
-        uses: actions/setup-python@v2
-
-      - name: Cache dependencies
-        uses: actions/cache@v2
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('docs/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-            ${{ runner.os }}-
+          python-version: '3.x'
 
       - name: Install dependencies
-        run: cd docs && make install
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs-material
 
       - name: Build and deploy
-        run: cd docs && make deploy
+        run: mkdocs gh-deploy --force
