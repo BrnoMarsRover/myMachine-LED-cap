@@ -1,19 +1,12 @@
-site_name: MkDocs Quickstart
-# SEO description.
-site_description: "A concise recipe for setting up a MkDocs docs site on GitHub Pages"
-
-nav:
-  - Home: index.md
-  - About MkDocs: about-mkdocs.md
-  - Tutorial:
-      - TL;DR: tutorial/tldr.md
-      - Installation: tutorial/installation.md
-      - Setup project: tutorial/setup-project.md
-      - Advanced: tutorial/advanced.md
-      - Usage: tutorial/usage.md
-      - Deploy: tutorial/deploy.md
+site_name: My Machine LED kšiltovka
+site_description: Dokumentace k projektu MyMachine - LED kšiltovka
+repo_name: BrnoMarsRover/myMachine-LED-cap
+repo_url: https://github.com/BrnoMarsRover/myMachine-LED-cap.git
 
 theme: readthedocs
 
-# Target for Edit in GitHub button.
-repo_url: https://github.com/MichaelCurrin/mkdocs-quickstart/
+nav:
+  - Home: index.md
+  - Logbook:
+      - Week 1: log/page1.md
+  - Source: source.md
