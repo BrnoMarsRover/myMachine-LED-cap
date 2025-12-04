@@ -6,3 +6,8 @@
 **/.DS_Store
 **/.idea/
 **/cmake-build-debug/
+__pycache__/
+site/
+.vscode/
+*.pyc
+

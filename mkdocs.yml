@@ -1,0 +1,12 @@
+site_name: My Machine LED kšiltovka
+site_description: Dokumentace k projektu MyMachine - LED kšiltovka
+repo_name: BrnoMarsRover/myMachine-LED-cap
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Logbook:
+      - Week 1: log/page1.md
+  - Source: source.md
+
