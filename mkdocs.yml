@@ -3,6 +3,7 @@ site_description: Dokumentace k projektu MyMachine - LED kšiltovka
 
 repo_name: BrnoMarsRover/myMachine-LED-cap
 repo_url: https://github.com/BrnoMarsRover/myMachine-LED-cap
+edit_uri: edit/main/docs/
 
 theme:
   name: readthedocs
