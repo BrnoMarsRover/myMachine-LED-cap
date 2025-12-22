@@ -452,6 +452,10 @@
     [
       "42661c25-a76d-41a1-8ad4-79781b4adf06",
       "DC motor driver"
+    ],
+    [
+      "785d3379-347e-4437-9764-8387c52a78a7",
+      "Power distribution"
     ]
   ],
   "text_variables": {}
