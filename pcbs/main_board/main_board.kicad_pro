@@ -657,6 +657,14 @@
     [
       "785d3379-347e-4437-9764-8387c52a78a7",
       "Power distribution"
+    ],
+    [
+      "8f6a6b6a-55d3-49d9-8867-0fe8dfe17e5c",
+      "Display"
+    ],
+    [
+      "ba209d61-c71a-44e2-be69-6b7f55e44949",
+      "Accelerometer"
     ]
   ],
   "text_variables": {}
