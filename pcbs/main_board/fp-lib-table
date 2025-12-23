@@ -3,4 +3,5 @@
   (lib (name "ESP32_mini")(type "KiCad")(uri "${KIPRJMOD}/libs/ESP32_mini_KiCad_Library-master/ESP32_mini.pretty")(options "")(descr ""))
   (lib (name "DRV8873HPWPRQ1")(type "KiCad")(uri "${KIPRJMOD}/libs/DRV8873HPWPRQ1")(options "")(descr ""))
   (lib (name "display")(type "KiCad")(uri "${KIPRJMOD}/libs/customs/display.pretty")(options "")(descr ""))
+  (lib (name "step-up_module")(type "KiCad")(uri "${KIPRJMOD}/libs/customs/step-up_module.pretty")(options "")(descr ""))
 )
