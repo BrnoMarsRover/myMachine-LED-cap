@@ -1,5 +1,7 @@
-# Komponenty
+## Komponenty
 Všechny komponenty potřebné pro realizaci jedné LED kšiltovky. BOM pro desku plošných spojů bude generovat Kicad, proto je nebude zapisovat do této tabulky.
+
+Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit.cz.
 
 ## Tabulka komponent
 | Název | Obchod | Množství | Cena (ks) | Cena celkem | Poznámka |

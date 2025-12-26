@@ -51,4 +51,10 @@
 Při zapnuté Wi-Fi nelze používat **ADC2** (`GPIO 0,2,4,12–15,25–27`).  
 Pro analogové měření používej výhradně **ADC1 (GPIO 32–39)**.
 
+**Legenda:**
+- M_ - signály pro DC motor driver
+- D_ - signály pro displej
+- LED_ - singály pro LED pásek
+- A_ - sígnály pro akcelerometr
+
 
