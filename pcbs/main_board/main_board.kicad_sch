@@ -1520,6 +1520,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:Jumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Open"
+				(at 0 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Open_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_0_1"
+				(arc
+					(start -1.524 1.27)
+					(mid 0 1.778)
+					(end 1.524 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1747,7 +1897,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO:\n- Zkontrolovat zapojení displeje aby to pak jelo hladce s knihovnou\n- U datové linky LED pásku je k zamyšlení level shifter 3.3V -> 5V\n- Vybrat konektory na desku, asi jst-xh?\n- Přidat nějaké signal LED\n"
+	(text "TODO:\n- U datové linky LED pásku je k zamyšlení level shifter 3.3V -> 5V\n- Vybrat konektory na desku, asi jst-xh?\n- Přidat nějaké signal LED\n"
 		(exclude_from_sim no)
 		(at 180.848 141.732 0)
 		(effects
@@ -1757,6 +1907,16 @@
 			(justify left top)
 		)
 		(uuid "4646083e-13d5-4bce-8c04-d4b91e88a04d")
+	)
+	(text "Výběr napájení ESP (USB/STEP UP)"
+		(exclude_from_sim no)
+		(at 185.42 24.384 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "565e1e2b-6f47-40e1-87f5-1d29b8039583")
 	)
 	(text "Pomůcka při zapojování"
 		(exclude_from_sim no)
@@ -1866,6 +2026,16 @@
 			(type default)
 		)
 		(uuid "16f7fdfa-db93-42fe-abac-6f09679569b2")
+	)
+	(wire
+		(pts
+			(xy 165.1 22.86) (xy 165.1 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18725d72-143e-43ec-bc61-a43707317f45")
 	)
 	(wire
 		(pts
@@ -2019,16 +2189,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 59.69) (xy 135.89 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f813d32-bf70-40de-b842-c250341d5f11")
-	)
-	(wire
-		(pts
 			(xy 93.98 31.75) (xy 91.44 31.75)
 		)
 		(stroke
@@ -2089,13 +2249,13 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 39.37) (xy 165.1 41.91)
+			(xy 102.87 59.69) (xy 105.41 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7dab255d-4e7b-47b3-8461-1ff01442d8d1")
+		(uuid "6d9f8188-4aa0-4cb4-808f-21966856da28")
 	)
 	(wire
 		(pts
@@ -2156,6 +2316,16 @@
 			(type default)
 		)
 		(uuid "98fd751b-1501-4859-aa2c-15f42da0acce")
+	)
+	(wire
+		(pts
+			(xy 165.1 36.83) (xy 165.1 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ad06844-d9c6-4f03-aee6-57d49e9ee4bf")
 	)
 	(wire
 		(pts
@@ -10396,6 +10566,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 165.1 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "359fe2b4-dc63-4095-8ad8-a1b350e60e87")
+		(property "Reference" "P1"
+			(at 167.894 26.924 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "USB/STEPUP"
+			(at 167.894 28.956 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 165.1 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper"
+			(at 165.1 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2653124d-4680-4abd-890f-dae5850c99d7")
+		)
+		(pin "1"
+			(uuid "3bff0d6d-51e6-41a2-bf3e-a5babcf66ec2")
+		)
+		(instances
+			(project "main_board"
+				(path "/86b00c07-962a-4c6d-8d05-813891e412c9"
+					(reference "P1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 251.46 31.75 0)
 		(unit 1)
@@ -10761,6 +11000,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 105.41 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c27845a8-00b2-483a-a907-34c377b9f0f6")
+		(property "Reference" "#PWR035"
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 109.22 59.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 105.41 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90be8a2d-1e14-42b5-894f-f23868cf2c72")
+		)
+		(instances
+			(project "main_board"
+				(path "/86b00c07-962a-4c6d-8d05-813891e412c9"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 177.8 39.37 180)
 		(unit 1)
@@ -11103,7 +11409,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 165.1 39.37 0)
+		(at 165.1 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11112,7 +11418,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec9ce5e8-798b-4110-b843-44e8b72e6ba1")
 		(property "Reference" "#PWR021"
-			(at 165.1 43.18 0)
+			(at 165.1 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11121,7 +11427,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 165.1 34.29 0)
+			(at 165.1 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11129,7 +11435,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 39.37 0)
+			(at 165.1 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11138,7 +11444,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 39.37 0)
+			(at 165.1 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11147,7 +11453,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 165.1 39.37 0)
+			(at 165.1 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
