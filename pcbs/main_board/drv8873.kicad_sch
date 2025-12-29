@@ -2747,7 +2747,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 62.23) (xy 123.19 62.23)
+			(xy 121.92 62.23) (xy 124.46 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2879,17 +2879,6 @@
 			(justify right)
 		)
 		(uuid "5548e2c8-c053-4e28-b0bb-590119b3fa1b")
-	)
-	(hierarchical_label "DVDD"
-		(shape input)
-		(at 123.19 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6e774ea5-c9c9-45ac-bf0f-f80e304ccd5f")
 	)
 	(hierarchical_label "SLEEP"
 		(shape input)
@@ -3074,6 +3063,73 @@
 			(project "main_board"
 				(path "/86b00c07-962a-4c6d-8d05-813891e412c9/42661c25-a76d-41a1-8ad4-79781b4adf06"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 124.46 62.23 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cf85844-9b3f-46cd-9f44-5fe69f6ea9f9")
+		(property "Reference" "#PWR033"
+			(at 120.65 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 128.27 62.2299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 124.46 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c27c1756-4f63-4c86-9291-693b1da8bccf")
+		)
+		(instances
+			(project "main_board"
+				(path "/86b00c07-962a-4c6d-8d05-813891e412c9/42661c25-a76d-41a1-8ad4-79781b4adf06"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
