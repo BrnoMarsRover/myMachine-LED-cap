@@ -1899,7 +1899,7 @@
 	)
 	(text "TODO:\n- U datové linky LED pásku je k zamyšlení level shifter 3.3V -> 5V\n- Přidat nějaké signal LED\n"
 		(exclude_from_sim no)
-		(at 180.848 141.732 0)
+		(at 178.562 152.908 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -1929,6 +1929,17 @@
 		)
 		(uuid "adad7ce4-24ed-41bf-84e3-628ff8d7ee35")
 	)
+	(text "ID piny, slouží k identifikaci PCB\nkaždé PCB bude mít jinou kombinaci\nnapř. přítomnost obou propojek:\n		0 0 -> ID:0\n"
+		(exclude_from_sim no)
+		(at 228.6 112.776 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c504d893-fc13-4732-84fe-56dedabf7f9c")
+	)
 	(junction
 		(at 95.25 36.83)
 		(diameter 0)
@@ -1946,6 +1957,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9861d656-5324-4adc-bafc-38502414b019")
+	)
+	(wire
+		(pts
+			(xy 133.35 100.33) (xy 135.89 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "001be7f7-e572-4c79-ad67-4fd75335a0e0")
 	)
 	(wire
 		(pts
@@ -2239,6 +2260,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 100.33) (xy 250.19 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "693522ce-9789-41d7-94d9-cf553fdc2292")
+	)
+	(wire
+		(pts
 			(xy 238.76 34.29) (xy 246.38 34.29)
 		)
 		(stroke
@@ -2256,6 +2287,16 @@
 			(type default)
 		)
 		(uuid "6d9f8188-4aa0-4cb4-808f-21966856da28")
+	)
+	(wire
+		(pts
+			(xy 236.22 100.33) (xy 236.22 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b8c3e6a-2a44-4a0d-ac26-02efb5d7f998")
 	)
 	(wire
 		(pts
@@ -2286,6 +2327,16 @@
 			(type default)
 		)
 		(uuid "85b05230-4e9e-423e-8340-df01658b4e2a")
+	)
+	(wire
+		(pts
+			(xy 133.35 102.87) (xy 135.89 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8858af49-ba3f-4f9a-9bcc-5a9f667ec69e")
 	)
 	(wire
 		(pts
@@ -2399,6 +2450,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 90.17) (xy 236.22 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbc231f9-3b04-4dd2-8653-ffbaee82e45f")
+	)
+	(wire
+		(pts
 			(xy 171.45 39.37) (xy 171.45 44.45)
 		)
 		(stroke
@@ -2456,6 +2517,16 @@
 			(type default)
 		)
 		(uuid "ddc94e22-f9dd-45ca-a56b-b6c3f4e8e984")
+	)
+	(wire
+		(pts
+			(xy 250.19 90.17) (xy 250.19 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de848fb8-2792-4ed4-aecc-9a0d35a5939f")
 	)
 	(wire
 		(pts
@@ -10340,6 +10411,28 @@
 		)
 		(uuid "2cc09185-215e-45f8-bfd7-d9385183170a")
 	)
+	(hierarchical_label "ID_1"
+		(shape input)
+		(at 250.19 90.17 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3bf62f00-62cf-4f8f-9b1c-6e7534058f54")
+	)
+	(hierarchical_label "ID_1"
+		(shape input)
+		(at 133.35 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "41ba721d-047b-4824-9f16-5d979b2c9dea")
+	)
 	(hierarchical_label "M_SLEEP"
 		(shape input)
 		(at 208.28 39.37 180)
@@ -10416,6 +10509,28 @@
 			(justify right)
 		)
 		(uuid "a61a8caa-5b62-43da-a3a5-6ba6932ec79a")
+	)
+	(hierarchical_label "ID_0"
+		(shape input)
+		(at 236.22 90.17 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b06b28c9-f38c-4a0a-9389-a66701a58a52")
+	)
+	(hierarchical_label "ID_0"
+		(shape input)
+		(at 133.35 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d205aab6-e013-4783-a502-eb616f14d35f")
 	)
 	(hierarchical_label "M_SLEEP"
 		(shape output)
@@ -10731,6 +10846,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 236.22 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "596bc859-915e-459a-898e-b1a0c556abcf")
+		(property "Reference" "R10"
+			(at 238.76 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 238.76 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 234.442 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW06030000Z0EI"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number" "71-CRCW06030000Z0EI"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aefe3f02-ed2b-433d-ba93-74a85fadfb7d")
+		)
+		(pin "1"
+			(uuid "d2c48afe-e11a-44e6-9138-f5971f727394")
+		)
+		(instances
+			(project "main_board"
+				(path "/86b00c07-962a-4c6d-8d05-813891e412c9"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 251.46 31.75 0)
 		(unit 1)
@@ -10822,6 +11034,103 @@
 			(project ""
 				(path "/86b00c07-962a-4c6d-8d05-813891e412c9"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 250.19 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7214aac1-1515-42c9-a9aa-57b14e384834")
+		(property "Reference" "R11"
+			(at 252.73 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 252.73 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 248.412 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 250.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW06030000Z0EI"
+			(at 250.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 250.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number" "71-CRCW06030000Z0EI"
+			(at 250.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4fa85cda-5b1f-4b48-9359-b6e69099d7bb")
+		)
+		(pin "1"
+			(uuid "db26e5e6-e2ae-472e-86fa-3c1c2f22ef31")
+		)
+		(instances
+			(project "main_board"
+				(path "/86b00c07-962a-4c6d-8d05-813891e412c9"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -10992,6 +11301,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 250.19 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e4429e1-8798-4bf4-b3cb-41a41eb4e047")
+		(property "Reference" "#PWR040"
+			(at 250.19 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98fc2db5-6774-4dbb-bd01-c9d0593ac879")
+		)
+		(instances
+			(project "main_board"
+				(path "/86b00c07-962a-4c6d-8d05-813891e412c9"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 208.28 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11051,6 +11426,72 @@
 			(project "main_board"
 				(path "/86b00c07-962a-4c6d-8d05-813891e412c9"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8d49302-6e61-44fe-b34f-1dc5bc4dfef3")
+		(property "Reference" "#PWR039"
+			(at 236.22 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07a0959c-2e5d-467d-a4c3-75c4344ca64b")
+		)
+		(instances
+			(project "main_board"
+				(path "/86b00c07-962a-4c6d-8d05-813891e412c9"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)

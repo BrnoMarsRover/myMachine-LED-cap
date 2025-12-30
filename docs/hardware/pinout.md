@@ -16,8 +16,8 @@
 | 8  | GPIO32 | IO    | ADC1_CH4       | GPIO / ADC           | M_SLEEP        |**OK s Wi-Fi** |
 | 9  | GPIO33 | IO    | ADC1_CH5       | GPIO / ADC           | D_RESET        |**OK s Wi-Fi** |
 | 10 | GPIO25 | IO    | DAC1 / ADC2    | GPIO / DAC           | M_FAULT        |⚠ ADC2 **nefunguje s Wi-Fi** |
-| 11 | GPIO26 | IO    | DAC2 / ADC2    | GPIO / DAC           |         |⚠ ADC2 **nefunguje s Wi-Fi** |
-| 12 | GPIO27 | IO    | ADC2_CH7       | GPIO / Touch         |         |⚠ ADC2 **nefunguje s Wi-Fi** |
+| 11 | GPIO26 | IO    | DAC2 / ADC2    | GPIO / DAC           | ID_0        |⚠ ADC2 **nefunguje s Wi-Fi** |
+| 12 | GPIO27 | IO    | ADC2_CH7       | GPIO / Touch         | ID_1        |⚠ ADC2 **nefunguje s Wi-Fi** |
 | 13 | GPIO14 | IO    | HSPI CLK       | SPI / GPIO           | D_DC/RS        |⚠ ADC2, strapping |
 | 14 | GPIO12 | IO    | ADC2_CH5       | GPIO                 |         |⚠ Strapping, **ADC2 + Wi-Fi** |
 | 15 | GND    | PWR   | Zem            | GND                  |         ||
@@ -58,5 +58,6 @@ Pro analogové měření používej výhradně **ADC1 (GPIO 32–39)**.
 - LED_ - singály pro LED pásek
 - A_ - signály pro akcelerometr
 - B_ - singnály pro baterie
+- ID_ - hardware identifikace
 
 
