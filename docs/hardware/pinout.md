@@ -11,12 +11,12 @@
 | 3  | EN     | CTRL  | Chip enable    | Reset                |         |LOW = reset |
 | 4  | GPIO36 | ADC   | ADC1_CH0       | Analog IN            | M_IPROP        |Pouze vstup, **OK s Wi-Fi** |
 | 5  | GPIO39 | ADC   | ADC1_CH3       | Analog IN            |         |Pouze vstup, **OK s Wi-Fi** |
-| 6  | GPIO34 | ADC   | ADC1_CH6       | Analog IN            |         |Pouze vstup, **OK s Wi-Fi** |
+| 6  | GPIO34 | ADC   | ADC1_CH6       | Analog IN            | B_STATUS        |Pouze vstup, **OK s Wi-Fi** |
 | 7  | GPIO35 | ADC   | ADC1_CH7       | Analog IN            |         |Pouze vstup, **OK s Wi-Fi** |
 | 8  | GPIO32 | IO    | ADC1_CH4       | GPIO / ADC           | M_SLEEP        |**OK s Wi-Fi** |
 | 9  | GPIO33 | IO    | ADC1_CH5       | GPIO / ADC           | D_RESET        |**OK s Wi-Fi** |
 | 10 | GPIO25 | IO    | DAC1 / ADC2    | GPIO / DAC           | M_FAULT        |⚠ ADC2 **nefunguje s Wi-Fi** |
-| 11 | GPIO26 | IO    | DAC2 / ADC2    | GPIO / DAC           | B_STATUS        |⚠ ADC2 **nefunguje s Wi-Fi** |
+| 11 | GPIO26 | IO    | DAC2 / ADC2    | GPIO / DAC           |         |⚠ ADC2 **nefunguje s Wi-Fi** |
 | 12 | GPIO27 | IO    | ADC2_CH7       | GPIO / Touch         |         |⚠ ADC2 **nefunguje s Wi-Fi** |
 | 13 | GPIO14 | IO    | HSPI CLK       | SPI / GPIO           | D_DC/RS        |⚠ ADC2, strapping |
 | 14 | GPIO12 | IO    | ADC2_CH5       | GPIO                 |         |⚠ Strapping, **ADC2 + Wi-Fi** |

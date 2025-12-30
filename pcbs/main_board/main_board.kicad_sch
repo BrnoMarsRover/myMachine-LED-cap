@@ -2229,16 +2229,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 100.33) (xy 135.89 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64c206e7-602d-486e-b423-e456c83e5804")
-	)
-	(wire
-		(pts
 			(xy 121.92 34.29) (xy 121.92 46.99)
 		)
 		(stroke
@@ -2346,6 +2336,16 @@
 			(type default)
 		)
 		(uuid "9d79d62c-077b-48fd-98fb-f5d271362894")
+	)
+	(wire
+		(pts
+			(xy 133.35 80.01) (xy 135.89 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a033489e-759e-4c88-95b9-75260a202408")
 	)
 	(wire
 		(pts
@@ -10353,7 +10353,7 @@
 	)
 	(hierarchical_label "B_STATUS"
 		(shape input)
-		(at 133.35 100.33 180)
+		(at 133.35 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
