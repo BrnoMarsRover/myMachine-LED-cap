@@ -14,6 +14,8 @@ Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit
 |[Bateriový box](https://www.laskakit.cz/bateriovy-box-1x18650-dratove-vyvody/)|LaskaKit|2|12 Kč|24 Kč|LA123057|
 |[Baterie Li-Ion](https://www.laskakit.cz/geb-li-ion-baterie-18650-3200mah-3-7v/)|LaskaKit|2|158 Kč|316 Kč|LA123134|
 |[Dual-Lock zip](https://www.3market.cz/sj-3870-samolepici-suchy-zip-3m-dual-lock--lepeni-kovu--povrchu-s-praskovymi-laky--plastu-typu-plexiskla--polykarbonatu-a-abs--cena-za-bezny-metr--exterier-a-interier/)|3market|1 m|108,4 Kč|108,4 Kč|7100214419|
+|[Vložka se závitem](https://cz.mouser.com/ProductDetail/SI/IUTB-M2.5?qs=7MVldsJ5UaxaLK8FbVq%252B7A%3D%3D)|Mouser electronics|8|9 Kč|72 Kč|153-IUTB-M2.5|
+|[Distanční sloupek](https://cz.mouser.com/c/electromechanical/hardware/standoffs-spacers/?gender=Male%20%2F%20Female&thread%20size=M2.5)|Mouser electronics|8|10 Kč|80 Kč|nutné doladit výšku podle možností  výrobku|
 |-|-|-|-|-|-|
 
 
