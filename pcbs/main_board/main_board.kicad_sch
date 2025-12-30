@@ -1897,7 +1897,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO:\n- U datové linky LED pásku je k zamyšlení level shifter 3.3V -> 5V\n- Vybrat konektory na desku, asi jst-xh?\n- Přidat nějaké signal LED\n"
+	(text "TODO:\n- U datové linky LED pásku je k zamyšlení level shifter 3.3V -> 5V\n- Přidat nějaké signal LED\n"
 		(exclude_from_sim no)
 		(at 180.848 141.732 0)
 		(effects
@@ -2229,6 +2229,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 100.33) (xy 135.89 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64c206e7-602d-486e-b423-e456c83e5804")
+	)
+	(wire
+		(pts
 			(xy 121.92 34.29) (xy 121.92 46.99)
 		)
 		(stroke
@@ -2476,6 +2486,16 @@
 			(type default)
 		)
 		(uuid "e98509a3-e3dc-4a9b-8329-a35ba890f1b2")
+	)
+	(wire
+		(pts
+			(xy 39.37 24.13) (xy 43.18 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f19122af-dab6-4bbb-bfc0-9ace6a93c58b")
 	)
 	(wire
 		(pts
@@ -10331,6 +10351,17 @@
 		)
 		(uuid "444f70b4-8beb-4c84-8045-c5151495aef8")
 	)
+	(hierarchical_label "B_STATUS"
+		(shape input)
+		(at 133.35 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4e612ec8-8f73-4b1e-892f-b06993629c4e")
+	)
 	(hierarchical_label "M_IPROP"
 		(shape input)
 		(at 133.35 85.09 180)
@@ -10352,6 +10383,17 @@
 			(justify left)
 		)
 		(uuid "5a184175-7f76-4972-838c-d446cbb266b5")
+	)
+	(hierarchical_label "B_STATUS"
+		(shape output)
+		(at 43.18 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "65baa229-840b-43ab-bdbe-3fdde8478428")
 	)
 	(hierarchical_label "M_PWM"
 		(shape input)
@@ -10520,7 +10562,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_S3B-XH-A-1_1x03_P2.50mm_Horizontal"
 			(at 86.36 34.29 0)
 			(effects
 				(font
@@ -10529,7 +10571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cz.mouser.com/datasheet/3/1070/1/eXH.pdf"
 			(at 86.36 34.29 0)
 			(effects
 				(font
@@ -10538,7 +10580,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "JST XH 3 pin, zásuvka, boční"
+			(at 86.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "S3B-XH-A-E(LF)(SN)"
+			(at 86.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 86.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number" "306-S3BXHAELFSN"
 			(at 86.36 34.29 0)
 			(effects
 				(font
@@ -10592,7 +10661,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
 			(at 165.1 31.75 0)
 			(effects
 				(font
@@ -10610,8 +10679,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Jumper"
+		(property "Description" "Kolíková lišta"
 			(at 165.1 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "LA217003A"
+			(at 165.1 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LaskaKit"
+			(at 165.1 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number" "LA217003A"
+			(at 165.1 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10662,7 +10758,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A-1_1x02_P2.50mm_Horizontal"
 			(at 251.46 31.75 0)
 			(effects
 				(font
@@ -10671,7 +10767,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cz.mouser.com/datasheet/3/1070/1/eXH.pdf"
 			(at 251.46 31.75 0)
 			(effects
 				(font
@@ -10680,7 +10776,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "JST XH 2 pin, zásuvka, boční"
+			(at 251.46 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "S2B-XH-A-BK(LF)(SN)"
+			(at 251.46 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 251.46 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number" "306-S2BXHABKLFSN"
 			(at 251.46 31.75 0)
 			(effects
 				(font
@@ -11251,7 +11374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "~"
+		(property "Manufacturer Part Number" "LA100089"
 			(at 148.59 39.37 0)
 			(effects
 				(font
@@ -11627,6 +11750,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "STATUS" output
+			(at 39.37 24.13 0)
+			(uuid "c36e8f8f-38b6-48ef-b95c-7cb438611fb9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

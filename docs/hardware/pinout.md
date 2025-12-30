@@ -16,12 +16,12 @@
 | 8  | GPIO32 | IO    | ADC1_CH4       | GPIO / ADC           | M_SLEEP        |**OK s Wi-Fi** |
 | 9  | GPIO33 | IO    | ADC1_CH5       | GPIO / ADC           | D_RESET        |**OK s Wi-Fi** |
 | 10 | GPIO25 | IO    | DAC1 / ADC2    | GPIO / DAC           | M_FAULT        |⚠ ADC2 **nefunguje s Wi-Fi** |
-| 11 | GPIO26 | IO    | DAC2 / ADC2    | GPIO / DAC           |         |⚠ ADC2 **nefunguje s Wi-Fi** |
+| 11 | GPIO26 | IO    | DAC2 / ADC2    | GPIO / DAC           | B_STATUS        |⚠ ADC2 **nefunguje s Wi-Fi** |
 | 12 | GPIO27 | IO    | ADC2_CH7       | GPIO / Touch         |         |⚠ ADC2 **nefunguje s Wi-Fi** |
 | 13 | GPIO14 | IO    | HSPI CLK       | SPI / GPIO           | D_DC/RS        |⚠ ADC2, strapping |
 | 14 | GPIO12 | IO    | ADC2_CH5       | GPIO                 |         |⚠ Strapping, **ADC2 + Wi-Fi** |
 | 15 | GND    | PWR   | Zem            | GND                  |         ||
-| 16 | GPIO13 | IO    | HSPI MOSI      | SPI / GPIO           | D_LED        |⚠ ADC2 **nefunguje s Wi-Fi** |
+| 16 | GPIO13 | IO    | HSPI MOSI      | SPI / GPIO           |         |⚠ ADC2 **nefunguje s Wi-Fi** |
 | 17 | GPIO9  | FLASH | SPI Flash      | —                    |         |Nepoužívat |
 | 18 | GPIO10 | FLASH | SPI Flash      | —                    |         |Nepoužívat |
 | 19 | GPIO11 | FLASH | SPI Flash      | —                    |         |Nepoužívat |
@@ -52,9 +52,11 @@ Při zapnuté Wi-Fi nelze používat **ADC2** (`GPIO 0,2,4,12–15,25–27`).
 Pro analogové měření používej výhradně **ADC1 (GPIO 32–39)**.
 
 **Legenda:**
+
 - M_ - signály pro DC motor driver
 - D_ - signály pro displej
 - LED_ - singály pro LED pásek
-- A_ - sígnály pro akcelerometr
+- A_ - signály pro akcelerometr
+- B_ - singnály pro baterie
 
 
