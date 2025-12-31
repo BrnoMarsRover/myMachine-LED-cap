@@ -13,5 +13,6 @@ nav:
   - Hardware:
       - Komponenty: hardware/komponenty.md
       - Pinout: hardware/pinout.md
+      - Návody: hardware/navody.md
   - Software:
       - Motivace: software/example.md
