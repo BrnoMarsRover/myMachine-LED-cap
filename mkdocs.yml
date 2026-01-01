@@ -10,6 +10,7 @@ theme:
 
 nav:
   - Home: index.md
+  - Big Picture: big_picture.md
   - Hardware:
       - Komponenty: hardware/komponenty.md
       - Pinout: hardware/pinout.md
