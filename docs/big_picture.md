@@ -15,6 +15,7 @@ Po realizačním návrhu a domluvě s komisí bylo novým cílem realizovat sví
 Zakoupit jednoduchou kšiltovku, na kterou se přidělají navržené komponenty. Ideálně budou komponenty ke kšiltovce připevněny pomocí suchých zipů (viz seznam komponent), aby bylo možné vše jednoduše z kšiltovky odstranit a kšiltovku vyprat.
 
 Na kšiltovku se přidělají dvě navržené části:
+
 - **Display box** – box umístěný na čelní části kšiltovky. Bude obsahovat řídicí desku s mikrokontrolérem, vypínací tlačítko a baterii. Z čelní strany bude box zakryt displejem.
 - **Top box** – malý box umístěný v nejvyšším místě kšiltovky. Bude obsahovat malou DPS a motor pro vrtulku.
 
