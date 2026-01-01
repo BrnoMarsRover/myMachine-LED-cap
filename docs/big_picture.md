@@ -3,6 +3,7 @@ Původní dětské zadání bylo vytvořit svítící LED tričko, které bude p
 
 ## Zadání
 Po realizačním návrhu a domluvě s komisí bylo novým cílem realizovat svítící kšiltovku (ideálně tři, pro každou třídu jednu), která:
+
 - umí měnit barvy,
 - se ovládá přes mobil (či jiné zařízení),
 - má vrtulku poháněnou motorem,
@@ -22,6 +23,7 @@ Po celé kšiltovce bude rozveden LED pásek (viz foto). V místě top boxu bude
 Jako řídicí mikrokontrolér byl pro tento projekt vybrán **ESP32**, a to z důvodu podpory Wi-Fi. Konkrétně bude ESP32 fungovat jako webový server, ke kterému se bude možné připojit z libovolného zařízení (telefon, interaktivní tabule apod.). Přes webovou stránku bude možné kšiltovku ovládat.
 
 Minimální požadavky na ovládání přes webovou stránku:
+
 - volba nálady (šťastný, smutný apod.),
 - kreslení na displej,
 - zobrazení stavu baterie.
