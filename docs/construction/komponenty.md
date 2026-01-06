@@ -9,13 +9,16 @@ Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit
 |Kšitovka|-|-|-|-|Libovolně|
 |[Displej](https://www.laskakit.cz/en/4-0--480x320-tft-displej--st7796--spi--dotykovy/)|LaskaKit|1|598 Kč|598 Kč|LA141073|
 |[LED Neopixel](https://www.laskakit.cz/en/led-pasek-neopixel-ws2812b-144led-m-ip65-1m-cerny/?utm_source=google&utm_medium=cpc&utm_campaign=1_PLA_All_ROAS_%5BCZ%5D_tROAS_600%2F500&utm_id=1371265813&gad_source=1&gad_campaignid=1371265813&gbraid=0AAAAADPjitIueCNChxL4Y545pPkBaFS2a&gclid=Cj0KCQiA_8TJBhDNARIsAPX5qxSiWFBwfPPienp5ZWqcza1n9ikFo_yKG8FrUtmlRCfcvK896C5o-04aAqs_EALw_wcB)|LaskaKit|1,2 m|488 Kč|586 Kč|LA145022F|
-|[Motor](https://www.laskakit.cz/en/modul-ventilatoru-l9110/?utm_source=google&utm_medium=cpc&utm_campaign=1_PLA_All_ROAS_%5BCZ%5D_tROAS_600%2F500&utm_id=1371265813&gad_source=1&gad_campaignid=1371265813&gbraid=0AAAAADPjitIueCNChxL4Y545pPkBaFS2a&gclid=Cj0KCQiA_8TJBhDNARIsAPX5qxTDYIWQUjC-HdZea7n2kmVxkPsQUx4N0j7z8rF1HOepVL43pADCdH4aAu8vEALw_wcB)|LaskaKit|1|58 Kč|58 Kč|LA143011|
-|[Switch](https://cz.mouser.com/ProductDetail/E-Switch/RD151C112F?qs=QtyuwXswaQg7j8DbOZUpHw%3D%3D)|Mouser electronics|1|19,81 Kč|19,81 Kč|612-RD151C112F|
+|[Switch](https://cz.mouser.com/ProductDetail/E-Switch/RD151C112F?qs=QtyuwXswaQg7j8DbOZUpHw%3D%3D)|Mouser|1|19,81 Kč|19,81 Kč|612-RD151C112F|
 |[Bateriový box](https://www.laskakit.cz/bateriovy-box-1x18650-dratove-vyvody/)|LaskaKit|2|12 Kč|24 Kč|LA123057|
 |[Baterie Li-Ion](https://www.laskakit.cz/geb-li-ion-baterie-18650-3200mah-3-7v/)|LaskaKit|2|158 Kč|316 Kč|LA123134|
 |[Dual-Lock zip](https://www.3market.cz/sj-3870-samolepici-suchy-zip-3m-dual-lock--lepeni-kovu--povrchu-s-praskovymi-laky--plastu-typu-plexiskla--polykarbonatu-a-abs--cena-za-bezny-metr--exterier-a-interier/)|3market|1 m|108,4 Kč|108,4 Kč|7100214419|
-|[Vložka se závitem](https://cz.mouser.com/ProductDetail/SI/IUTB-M2.5?qs=7MVldsJ5UaxaLK8FbVq%252B7A%3D%3D)|Mouser electronics|8|9 Kč|72 Kč|153-IUTB-M2.5|
-|[Distanční sloupek](https://cz.mouser.com/c/electromechanical/hardware/standoffs-spacers/?gender=Male%20%2F%20Female&thread%20size=M2.5)|Mouser electronics|8|10 Kč|80 Kč|nutné doladit výšku podle možností  výrobku|
+|[Vložka se závitem](https://cz.mouser.com/ProductDetail/SI/IUTB-M2.5?qs=7MVldsJ5UaxaLK8FbVq%252B7A%3D%3D)|Mouser|8|9 Kč|72 Kč|153-IUTB-M2.5|
+|[Distanční sloupek](https://cz.mouser.com/c/electromechanical/hardware/standoffs-spacers/?gender=Male%20%2F%20Female&thread%20size=M2.5)|Mouser|8|10 Kč|80 Kč|nutné doladit výšku podle možností  výrobku|
+|Display box|-|1|-|-|3D tisk|
+|Top box|-|1|-|-|3D tisk|
+|Top PCB|-|1|-|TODO|Vyrobí se|
+|Main PCB|-|1|-|TODO|Vyrobí se|
 |-|-|-|-|-|-|
 
 

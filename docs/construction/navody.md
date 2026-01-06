@@ -1,6 +1,6 @@
 ## Návod na složení
 
-### box
+### Display box
 Držák baterie vložíme do prostoru označeného číslem 2), protáhneme kabely horním a spodním otvorem. Šroubkem ve středu dílu ho uchytíme k výtisku.
 Do válcových děr označených číslem 1) a 3) je nutné zatavit měděný metrický závit velikosti M2.5 (vysvětleno níže). Do závitů vložit distanční sloupek velikosti M2.5, na šroubky závitů 1) následně vložit PCB, které se poté uchytí maticí.
 K PCB s mikroprocesorem přichytit dráty z baterií, konektor od displaye a konektor na LED pásky (a další?)
@@ -11,4 +11,4 @@ Měděný závit (který má průměr menší než vytisknutá díra) se vloží
 
 ### LED pásky
 
-![box](obrazek/box.png)
+![display_box](../images/box.png)

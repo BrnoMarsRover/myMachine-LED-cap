@@ -35,6 +35,7 @@ Mikrokontrolér bude dále obsluhovat veškeré periferie. Programování bude p
 
 Jak již bylo zmíněno, v obou boxech se bude nacházet DPS. V display boxu se bude nacházet hlavní řídicí deska, zatímco v top boxu menší DPS sloužící ke křížení LED pásku a uchycení motoru.
 
+![Náhled modelu](../images/model_bigPicture.png)
 
 ## Výroba
 

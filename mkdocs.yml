@@ -11,9 +11,10 @@ theme:
 nav:
   - Home: index.md
   - Big Picture: big_picture.md
+  - Konstrukce:
+      - Komponenty: construction/komponenty.md
+      - Návody: construction/navody.md
   - Hardware:
-      - Komponenty: hardware/komponenty.md
       - Pinout: hardware/pinout.md
-      - Návody: hardware/navody.md
   - Software:
       - Motivace: software/example.md
