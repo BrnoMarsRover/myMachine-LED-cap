@@ -24,7 +24,4 @@ Při konstrukci je potřeba nejdříve změřit délku LED pásku na daný prost
 Pásek začíná v bodě A), je nutné zde připájet na plochy LED pásku dráty napájení a komunikace vedoucí do Display boxu. z bodu A) pásek dvěma zalomeními pokračuje přes kšilt do bodu B). Dále přes Top Box dorazí zpět do bodu A) (Pozor, top box by měl mít správnou orientaci s konektorem na pravé části kšiltovky). Dále pásek pokračuje do Bodu D), poté před Top box to bodu C) a končí v bodě B).
 
 
-<p align="center">
-  <img src="../images/ksiltovka_led.png" alt="Složení LED pásku" width="400">
-</p>
-
+![Složení LED pásku](../images/ksiltovka_led.png)
