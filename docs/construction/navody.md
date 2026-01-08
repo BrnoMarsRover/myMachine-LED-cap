@@ -4,8 +4,8 @@ Stránka vysvětluje konstrukci dvou boxů a LED pásku.
 
 ### Display box
 Držák baterie vložíme do prostoru označeného číslem 2), protáhneme kabely horním a spodním otvorem. Šroubkem ve středu dílu ho uchytíme k výtisku.
-Do válcových děr označených číslem 1) a 3) je nutné zatavit měděný metrický závit velikosti M2.5 (vysvětleno níže). Do závitů vložit distanční sloupek velikosti M2.5, na šroubky závitů 1) následně vložit osazené PCB, které se poté uchytí maticemi.
-K PCB s mikroprocesorem přichytit dráty z baterií, konektor od displaye a konektor na LED pásky (a další?).
+Do válcových děr označených číslem 1) a 3) je nutné zatavit měděný metrický závit velikosti M2.5 (vysvětleno níže). Do závitů vložit distanční sloupek velikosti M2.5, na šroubky závitů 1) následně vložit osazené PCB, které se poté uchytí maticemi. Násleně zvenku protlačit vypínací tlačítko.
+K PCB s mikroprocesorem přichytit dráty z baterií, konektor od displaye a konektor na LED pásky a dráty od zapínacího tlačítka.
 Na šrouby distančních sloupků 3) se vloží PCB displaye, šrouby se utáhnou maticí. Display takto uzavírá celou krabičku, pro finální sestavení výrobku je dobré zakápnout závit pomocí lepidla Loctite.
 
 ![Display_box](../images/box.png)
