@@ -629,6 +629,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:Jumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Open"
+				(at 0 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Open_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_0_1"
+				(arc
+					(start -1.524 1.27)
+					(mid 0 1.778)
+					(end 1.524 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Simulation_SPICE:PMOS"
 			(pin_numbers
 				(hide yes)
@@ -1638,6 +1788,17 @@
 		)
 		(uuid "7ef05e2e-e946-4e43-ac85-3ae2e76b3f33")
 	)
+	(text "Výběr napájení 5V\n(USB/STEP UP)"
+		(exclude_from_sim no)
+		(at 136.652 104.394 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c3a17ba5-3b6f-4436-a66e-d079b1e725eb")
+	)
 	(text "- 3,3 V bude dělat regulátor na esp32 dev boardu\n- Nenašel jsem v dokumentaci přesný typ, snad to proudově zvládne\n- Při programování přepojit propojku, napájení bude z usb\n"
 		(exclude_from_sim no)
 		(at 200.914 139.7 0)
@@ -1835,13 +1996,13 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 115.57) (xy 135.89 115.57)
+			(xy 133.35 115.57) (xy 138.43 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac2827bb-b11f-4576-8043-43cdbe31e776")
+		(uuid "ae1af8d1-4dc6-4f44-9e20-fe981cb90274")
 	)
 	(wire
 		(pts
@@ -1872,6 +2033,16 @@
 			(type default)
 		)
 		(uuid "c3855cb4-c2c1-4ca3-8656-3e9ba787c194")
+	)
+	(wire
+		(pts
+			(xy 148.59 115.57) (xy 153.67 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c684212a-1991-4610-9a02-2c3f3a6e03b1")
 	)
 	(wire
 		(pts
@@ -2196,7 +2367,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 135.89 115.57 270)
+		(at 153.67 115.57 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2205,7 +2376,7 @@
 		(fields_autoplaced yes)
 		(uuid "0e83e3b3-cd7c-47a9-a175-8cf5ca6ac724")
 		(property "Reference" "#PWR017"
-			(at 132.08 115.57 0)
+			(at 149.86 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2214,7 +2385,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 139.7 115.5699 90)
+			(at 157.48 115.5699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2223,7 +2394,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 115.57 0)
+			(at 153.67 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2232,7 +2403,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 115.57 0)
+			(at 153.67 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2241,7 +2412,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 135.89 115.57 0)
+			(at 153.67 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2513,6 +2684,102 @@
 			(project "main_board"
 				(path "/86b00c07-962a-4c6d-8d05-813891e412c9/785d3379-347e-4437-9764-8387c52a78a7"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 143.51 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "359fe2b4-dc63-4095-8ad8-a1b350e60e87")
+		(property "Reference" "P1"
+			(at 144.78 112.522 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "USB/STEPUP"
+			(at 149.352 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+			(at 143.51 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Kolíková lišta"
+			(at 143.51 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "LA217003A"
+			(at 143.51 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LaskaKit"
+			(at 143.51 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number" "LA217003A"
+			(at 143.51 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2653124d-4680-4abd-890f-dae5850c99d7")
+		)
+		(pin "1"
+			(uuid "3bff0d6d-51e6-41a2-bf3e-a5babcf66ec2")
+		)
+		(instances
+			(project "main_board"
+				(path "/86b00c07-962a-4c6d-8d05-813891e412c9/785d3379-347e-4437-9764-8387c52a78a7"
+					(reference "P1")
 					(unit 1)
 				)
 			)
