@@ -1959,6 +1959,17 @@
 		)
 		(uuid "adad7ce4-24ed-41bf-84e3-628ff8d7ee35")
 	)
+	(text "- Odpojení napájení esp z externího regulátoru\n  při připojení USB napájení\n"
+		(exclude_from_sim no)
+		(at 198.628 17.526 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b1d106aa-a757-4e2c-b4f8-a4505bd3e376")
+	)
 	(text "- ID piny, slouží k identifikaci PCB\n- každé PCB bude mít jinou kombinaci\n  např. přítomnost obou propojek:\n		0 0 -> ID:0\n"
 		(exclude_from_sim no)
 		(at 217.17 131.826 0)
@@ -1993,6 +2004,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dab12080-945f-4e69-92fa-af38fe5fba4f")
+	)
+	(no_connect
+		(at 179.07 27.94)
+		(uuid "9c450a64-5164-4154-80e9-507328a75224")
+	)
+	(no_connect
+		(at 199.39 27.94)
+		(uuid "fbc93048-57fd-4e59-8266-f1e8d145e1be")
 	)
 	(wire
 		(pts

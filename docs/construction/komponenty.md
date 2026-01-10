@@ -23,6 +23,8 @@ Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit
 
 
 ### Nabíjení
-Nabíjení vybraných baterií bude probíhat externě. Může se koupit jakákoliv nabíječka na Li-Ion baterie jako například [zde](https://www.alza.cz//alzapower-usb-battery-charger-ap450b-d6154186.htm?kampan=adwacc_prislusenstvi-pro-mt_pla_all_obecna-css_alzapower_c_9048126___AEY0092_703288052762_~163862982939~&gad_source=1&gad_campaignid=21394549199&gbraid=0AAAAAD2xsm4CFnRhsns6sOc4PfvG8YOb7&gclid=Cj0KCQiAgbnKBhDgARIsAGCDdlfQjqT1tbzcL8nXuXh7lQ7hQp1g8uv6_5cBkIG9-CNCyUonKmsYQ0AaAu-wEALw_wcB), cena orietačně 700 - 800 Kč. Bude však stačit jedna nabíječka pro všechny kšiltovky.
+Nabíjení vybraných baterií bude probíhat externě. Může se koupit jakákoliv nabíječka na Li-Ion baterie jako například [zde](https://www.laskakit.cz/en/nabijecka-liitokala-lii-pd4-pro-li-ion--li-fe-a-ni-mh-baterie/), cena orietačně 700 - 800 Kč. Bude však stačit jedna nabíječka pro všechny kšiltovky.
+
+Přidaný byl také do řídící desky IC pro nabíjení baterií přímo v kšiltovce. Externí nabíjení bude však rychlejší.
 
 
