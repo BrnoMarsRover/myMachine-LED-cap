@@ -997,7 +997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" "LA143024A"
 			(at 166.37 68.58 0)
 			(effects
 				(font
@@ -1006,7 +1006,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "LaskaKit"
 			(at 166.37 68.58 0)
 			(effects
 				(font
@@ -1015,7 +1015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" ""
+		(property "Supplier Part Number" "LA143024A"
 			(at 166.37 68.58 0)
 			(effects
 				(font

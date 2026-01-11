@@ -54,6 +54,17 @@
 		)
 	)
 	(attr smd)
+	(fp_rect
+		(start -15.12 -7.14)
+		(end 16.73 7.54)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "6ffc80f6-d096-42af-b27b-2148b3736178")
+	)
 	(fp_line
 		(start -14.8139 -6.72455)
 		(end 16.4281 -6.72455)
@@ -179,38 +190,6 @@
 		(solder_paste_margin 0)
 		(thermal_bridge_angle 0)
 		(uuid "9d578146-580d-4184-b2e7-2a3d067c1328")
-	)
-	(zone
-		(net 0)
-		(net_name "")
-		(layer "F.Cu")
-		(uuid "9bd3c6b4-e914-4120-a5b0-2af89cd1be55")
-		(hatch edge 0.5)
-		(connect_pads
-			(clearance 0)
-		)
-		(min_thickness 0.25)
-		(filled_areas_thickness no)
-		(keepout
-			(tracks allowed)
-			(vias not_allowed)
-			(pads not_allowed)
-			(copperpour allowed)
-			(footprints not_allowed)
-		)
-		(placement
-			(enabled no)
-			(sheetname "")
-		)
-		(fill
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-		)
-		(polygon
-			(pts
-				(xy 16.55 -6.85) (xy 16.56 -6.84) (xy 16.56 7.43) (xy -14.95 7.43) (xy -14.95 -6.85)
-			)
-		)
 	)
 	(embedded_fonts no)
 )
