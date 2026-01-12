@@ -16,5 +16,7 @@ nav:
       - Návody: construction/navody.md
   - Hardware:
       - Pinout: hardware/pinout.md
+      - Top board:
+            - BOM: hardware/top_board/bom.md    
   - Software:
       - Motivace: software/example.md

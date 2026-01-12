@@ -140,7 +140,49 @@
 				)
 			)
 		)
+		(property "Manufacturer Part Number" "LA143024A"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b407b31-94cf-440a-9ebc-85b8a986e0a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier" "LaskaKit"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cee564a-f1b3-4d12-9220-6c3b667f8a15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier Part Number" "LA143024A"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3781d6c2-2407-480e-abaa-d342149ac1ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "PinHeader*P2.54mm* TerminalBlock*")
 		(path "/358ff01d-fadf-4ced-b7d3-92d86e6b725b")
+		(sheetname "/")
+		(sheetfile "tob_board.kicad_sch")
 		(attr smd)
 		(fp_circle
 			(center 0 0)
@@ -420,7 +462,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cz.mouser.com/datasheet/3/1070/1/eXH.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -432,7 +474,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "JST XH 3 pin, zásuvka, boční"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -440,6 +482,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "S3B-XH-A-E(LF)(SN)"
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f2a29b7-a5cd-44f5-84ef-2617d7b1bdfa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fea8c35f-8920-4662-83a8-fe6aaaa8c8ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier Part Number" "306-S3BXHAELFSN"
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "618d6fdd-8e1a-4804-b2a5-19a7805bfe18")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -945,7 +1026,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cz.mouser.com/datasheet/3/1070/1/eXH.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -957,7 +1038,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "JST XH 3 pin, zásuvka, boční"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -965,6 +1046,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "S3B-XH-A-E(LF)(SN)"
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be13851c-64c2-45b9-8be8-4c41b1faecb3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72db7b38-09a9-494f-b669-6d1ab9f7eaa6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier Part Number" "306-S3BXHAELFSN"
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb38e230-a24a-4a16-95d6-5aa43a548ee6")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1470,7 +1590,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cz.mouser.com/datasheet/3/1070/1/eXH.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1482,7 +1602,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "JST XH 2 pin, zásuvka, boční"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1490,6 +1610,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "S2B-XH-A-BK(LF)(SN)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb905197-bbb9-44b4-9929-9999454f89b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "22c58848-4950-4794-b9a3-3e8745ed1d8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier Part Number" "306-S2BXHABKLFSN"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68036b87-a54e-4106-802a-06a93dda9b95")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1944,7 +2103,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cz.mouser.com/datasheet/3/1070/1/eXH.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -1956,7 +2115,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "JST XH 3 pin, zásuvka, boční"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -1964,6 +2123,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "S3B-XH-A-E(LF)(SN)"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e57e48f-9aca-419a-a08e-1bde46d4f95d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a09dd09b-a521-49db-8321-4290c7558bee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier Part Number" "306-S3BXHAELFSN"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6eaf5cb4-a5dc-40de-9435-c2870b4276c1")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2495,6 +2693,45 @@
 				)
 			)
 		)
+		(property "Manufacturer Part Number" "LA143024A"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d95636c2-bf7e-42df-96c9-d66bfb9451b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier" "LaskaKit"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "768b82df-6d59-4785-a171-225c7995664f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier Part Number" "LA143024A"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96143bc4-0b05-439b-ba0d-ec9110aed66e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "PinHeader*P2.54mm* TerminalBlock*")
 		(path "/358ff01d-fadf-4ced-b7d3-92d86e6b725b")
 		(sheetname "/")
@@ -2682,7 +2919,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cz.mouser.com/datasheet/3/1070/1/eXH.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -2694,7 +2931,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "JST XH 3 pin, zásuvka, boční"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -2702,6 +2939,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "S3B-XH-A-E(LF)(SN)"
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "33e5c751-3368-4607-9fae-96a9df9ca240")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67c477d7-e5eb-4ebe-ba62-5a74a1402c19")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier Part Number" "306-S3BXHAELFSN"
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "836212ab-bf3d-4a75-9ead-426b15986af6")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
