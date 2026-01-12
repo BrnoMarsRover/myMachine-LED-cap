@@ -17,6 +17,7 @@ nav:
   - Hardware:
       - Pinout: hardware/pinout.md
       - Top board:
+            - Popis: hardware/top_board/top_board.md
             - BOM: hardware/top_board/bom.md    
   - Software:
       - Motivace: software/example.md

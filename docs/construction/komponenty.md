@@ -16,9 +16,11 @@ Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit
 |[Vložka se závitem](https://cz.mouser.com/ProductDetail/SI/IUTB-M2.5?qs=7MVldsJ5UaxaLK8FbVq%252B7A%3D%3D)|Mouser|8|9 Kč|72 Kč|153-IUTB-M2.5|
 |[Distanční sloupek](https://cz.mouser.com/c/electromechanical/hardware/standoffs-spacers/?gender=Male%20%2F%20Female&thread%20size=M2.5)|Mouser|8|10 Kč|80 Kč|nutné doladit výšku podle možností  výrobku|
 |Display box|-|1|-|-|3D tisk|
+|Main PCB|-|1|-|-|Objedná se|
+|Součástky Main PCB|Mouser/LaskaKit|1|-|-|Odkaz na BOM|
 |Top box|-|1|-|-|3D tisk|
-|Top PCB|-|1|-|TODO|Vyrobí se|
-|Main PCB|-|1|-|TODO|Vyrobí se|
+|Top PCB|-|1|-|-|Vyrobí se|
+|Součástky Top PCB|Mouser/LaskaKit|1|-|121 Kč|[Odkaz na BOM](../hardware/top_board/bom.md)|
 |-|-|-|-|-|-|
 
 

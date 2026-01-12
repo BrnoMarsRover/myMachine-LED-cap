@@ -11,7 +11,7 @@ Na šrouby distančních sloupků 3) se vloží PCB displaye, šrouby se utáhno
 ![Display_box](../images/box.png)
 
 ### Top Box
-Osazené PCB do krabičky a šup na kšiltovku (bude dopsáno později).
+K desce (top board) bude přišroubován vytištěný kryt, který bude zakrývat celý motor ze stran a seshora. Nahoře uprostřed je díra pro výstupní hřídel a dvě díry na šrouby, které uchytí horní mosazný rám převodovky. Závity v rámu jsou podle dokumentace M1,8, tak snad se najdou vhodné šrouby (dělali to čiňani). Model krytu je také hotový, stačí ho vytisknout. Vnitřní dutina je o něco větší než motor. Je možné toleranci snížit a dutinu změnšit, aby motor seděl v krytu pevněji. Pokud se ale povede přišroubovat seshora, nemělo by to být potřeba.
 
 ### Zatavení závitové vložky
 Měděný závit (který má průměr menší než vytisknutá díra) se vloží do díry (zasekne se o zuby po obvodu). Bodovou páječku zapneme na nižší než pájecí teplotu a položíme na závit, aplikujeme mírný tlak a závit se po chvíli zataví do plastu. 

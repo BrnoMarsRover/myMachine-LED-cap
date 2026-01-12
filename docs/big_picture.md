@@ -47,13 +47,3 @@ Desky plošných spojů jsou navrhovány v programu **KiCad**. Menší deska, kt
 
 Pro hlavní řídicí desku bylo navrženo schéma zapojení. Dále je otevřená otázka, zda si tuto desku bude chtít střední škola navrhnout sama. Schéma je k dispozici v GitHubovém repozitáři.
 
-
-## Top box a top board
-
-Horní deska slouží ke dvěma účelům - zaprvé drží motor, zadruhé jsou na ní konektory k motoru a k ledpáskům.
-
-Konektory jsou typu JST-XH. Samice se zapájí do desky. Samce bude potřeba nakrimpovat. 
-
-Bude použit tento motor: [https://www.laskakit.cz/ga12-n20-6v-motor-s-prevodovkou/?variantId=1853](https://www.laskakit.cz/ga12-n20-6v-motor-s-prevodovkou/?variantId=1853) . Případně s podrobnějším výkresem zde: [https://www.aliexpress.com/item/1005010029527576.html](https://www.aliexpress.com/item/1005010029527576.html). Na výstup převodovky se umístí vrtulka, která se pravděpodobně vytiskne. Zespodu má motor dva vývody, kterými bude připájen k desce. Mezi vývody je ale výstupek. Uprostřed desky tedy bude muset být otvor, kterým výstupek projde. Okraje otvoru budou zasahovat poměrně blízko k dírám pro připájení vývodů motoru. Kicad projekt s navrženou deskou je ve složce pcbs. Pokud by se objevil problém s deskou, jsem připraven pomoct s jeho řešením.
-
-Dále bude k desce přišroubován vytištěný kryt, který bude zakrývat celý motor ze stran a seshora. Nahoře uprostřed je díra pro výstupní hřídel a dvě díry na šrouby, které uchytí horní mosazný rám převodovky. Závity v rámu jsou podle dokumentace M1,8, tak snad se najdou vhodné šrouby (dělali to čiňani). Model krytu je také hotový, stačí ho vytisknout. Vnitřní dutina je o něco větší než motor. Je možné toleranci snížit a dutinu změnšit, aby motor seděl v krytu pevněji. Pokud se ale povede přišroubovat seshora, nemělo by to být potřeba.
