@@ -1007,6 +1007,10 @@
     [
       "ba209d61-c71a-44e2-be69-6b7f55e44949",
       "Accelerometer"
+    ],
+    [
+      "15551cab-5d42-4f25-aaf4-f5eb9d3edde8",
+      "Level_shifter"
     ]
   ],
   "text_variables": {}

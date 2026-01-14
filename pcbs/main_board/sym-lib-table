@@ -4,4 +4,6 @@
   (lib (name "DRV8873HPWPRQ1")(type "KiCad")(uri "${KIPRJMOD}/libs/DRV8873HPWPRQ1/DRV8873HPWPRQ1.kicad_sym")(options "")(descr ""))
   (lib (name "display_sym")(type "KiCad")(uri "${KIPRJMOD}/libs/customs/display_sym.kicad_sym")(options "")(descr ""))
   (lib (name "step-up_module")(type "KiCad")(uri "${KIPRJMOD}/libs/customs/step-up_module.kicad_sym")(options "")(descr ""))
+  (lib (name "st1l08")(type "KiCad")(uri "${KIPRJMOD}/libs/customs/st1l08.kicad_sym")(options "")(descr ""))
+  (lib (name "txu0101")(type "KiCad")(uri "${KIPRJMOD}/libs/customs/txu0101.kicad_sym")(options "")(descr ""))
 )
