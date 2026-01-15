@@ -938,6 +938,18 @@
           "label": "A1_NOM",
           "name": "A1_NOM",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser number",
+          "name": "Mouser number",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Ullmanna Part Number",
+          "name": "Ullmanna Part Number",
+          "show": false
         }
       ],
       "filter_string": "",
