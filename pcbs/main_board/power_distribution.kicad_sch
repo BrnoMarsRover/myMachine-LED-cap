@@ -3339,15 +3339,6 @@
 				(hide yes)
 			)
 		)
-		(property "Ullmanna Part Number" "BMCLED103 "
-			(at 45.72 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Supplier" "Mouser"
 			(at 45.72 41.91 0)
 			(effects
