@@ -15,9 +15,9 @@ nav:
       - Komponenty: construction/komponenty.md
       - Návody: construction/navody.md
   - Hardware:
+      - Elektrické zapojení: hardware/zapojení.md
       - Pinout: hardware/pinout.md
       - Main board:
-            - Popis: hardware/main_board/main_board.md
             - BOM: hardware/main_board/bom.md
       - Top board:
             - Popis: hardware/top_board/top_board.md
