@@ -14,6 +14,7 @@ Step-up modul je zde primárně určen pro napájení motorového DC driveru, z�
 
 ## Spotřeba dle napěťových větví
 Udaná spotřeba je orientační. Na tyto hodnoty jsou dimenzovány zdroje a součástky.
+
 | Napěťová větev [V] | Komponenta| Typická spotřeba [mA]| Poznámka |
 |-------------------|------------|-----------------------|--------------------|
 |VBAT (3,3 - 4,2)|LED pásek|4 000|Případně se může omezit více|
