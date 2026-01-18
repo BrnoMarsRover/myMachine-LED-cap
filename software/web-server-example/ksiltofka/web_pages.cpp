@@ -1,11 +1,12 @@
 #include "web_pages.h"
 
-// Stabilní verze:
-// - vzhled jako původně (toolbar vpravo, při nízké výšce v landscape toolbar dole)
+// Kompletní web (iOS landscape fix + modelCanvas + sync + localStorage)
+// - PORTRAIT: velký canvas nahoře, toolbar dole
+// - LANDSCAPE: canvas co největší vlevo, toolbar vpravo (scrollovatelný, nikdy nezmizí)
 // - nevymaže se při otočení / resize
 // - nový klient si vyžádá sync a dostane PNG (320x240) od jiného klienta
-// - kresba je držena v "modelCanvas" 320x240 => žádné posuny/zmenšení
-// - lokální snapshot v localStorage jako fallback
+// - kresba držena v modelCanvas 320x240 => žádné posuny/zmenšení
+// - localStorage snapshot jako fallback
 const char index_html[] PROGMEM = R"rawliteral(
 <!DOCTYPE html>
 <html>
@@ -20,22 +21,38 @@ const char index_html[] PROGMEM = R"rawliteral(
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
-    overscroll-behavior: none;
     background:#222;
     color:#fff;
     font-family:sans-serif;
     text-align:center;
+
+    /* důležité: nechceme scroll stránky, ale v landscape chceme scroll toolbaru */
+    overflow: hidden;
 
     /* tvrdě vypnout pinch/zoom */
     touch-action: none;
     -webkit-text-size-adjust: 100%;
   }
 
-  h2 { margin: 10px 0 6px; }
-  p  { margin: 8px 0 0; font-size: 14px; color:#ddd; }
+  /* body jako flex sloupec: header + pracovní plocha */
+  body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+  }
 
+  #header{
+    flex: 0 0 auto;
+    padding: 6px 8px 0;
+  }
+
+  h2 { margin: 6px 0 4px; }
+  p  { margin: 6px 0 0; font-size: 14px; color:#ddd; }
+
+  /* wrapper = pracovní plocha (zbytek obrazovky) */
   #wrapper{
+    flex: 1 1 auto;
+    min-height: 0;            /* iOS: umožní vnitřní scroll */
     display:flex;
     justify-content:center;
     align-items:center;
@@ -44,27 +61,28 @@ const char index_html[] PROGMEM = R"rawliteral(
     box-sizing: border-box;
     max-width: 100vw;
 
-    /* DEFAULT = PORTRAIT: canvas nahoře, toolbar dole */
+    /* DEFAULT (PORTRAIT): canvas nahoře, toolbar dole */
     flex-direction: column;
   }
 
-  #toolbar{
-    display:flex;
-    flex-direction: row;     /* tlačítka vedle sebe */
-    flex-wrap: wrap;         /* zalamování na další řádek */
-    gap:6px;
-    justify-content:center;
-    align-items:center;
-
-    width: 100%;
-    max-width: 520px;        /* aby to na tabletu nebylo moc roztažené */
-  }
-
+  /* canvas */
   #canvas{
     background:#fff;
     border:1px solid #555;
     touch-action:none;
     display:block;
+  }
+
+  /* toolbar v portrait dole */
+  #toolbar{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:6px;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    max-width: 720px;
   }
 
   .colorBtn {
@@ -85,6 +103,7 @@ const char index_html[] PROGMEM = R"rawliteral(
     gap:6px;
     justify-content:center;
     align-items:center;
+    width: 100%;
   }
 
   .sizeBtn {
@@ -110,36 +129,118 @@ const char index_html[] PROGMEM = R"rawliteral(
   }
 
   #clearBtn {
-    margin-top:10px;
-    padding:6px 8px;
+    margin-top:6px;
+    padding:6px 10px;
     cursor:pointer;
   }
 
-  /* LANDSCAPE: toolbar vpravo, jako původně */
+  /* LANDSCAPE: canvas vlevo (flex), toolbar vpravo a scrollovatelný */
   @media (orientation: landscape) {
     #wrapper{
       flex-direction: row;
-      align-items:flex-start;
+      align-items: stretch;
+      width: 100%;
     }
+
+    #canvas{
+      flex: 1 1 auto;
+    }
+
     #toolbar{
+      flex: 0 0 170px;
+      width: 170px;
+      max-width: 170px;
+
       flex-direction: column;
       flex-wrap: nowrap;
-      width: auto;
-      max-width: none;
+      align-items:center;
+
+      max-height: 100%;
+      overflow-y: auto;                 /* ať tlačítka nikdy nezmizí */
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 8px;
+      box-sizing: border-box;
+    }
+
+    /* v landscape ať sizeRow není 100% šířky stránky, ale panelu */
+    .sizeRow{ width: auto; }
+  }
+
+  /* drobné zhuštění pro malé iPhony */
+  @media (max-width: 420px){
+    .colorBtn { width:32px; height:32px; }
+  }
+  /* iOS/Safari: nedovol tlačítkům divné "native" zploštění */
+button{
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* nikdy nenech prvky v toolbaru smrsknout */
+#toolbar, #toolbar *{
+  flex-shrink: 0;
+}
+
+/* LANDSCAPE: zmenšit header, aby canvas nebyl nízký */
+@media (orientation: landscape) {
+  #header{
+    padding: 2px 8px 0;
+  }
+  h2{
+    margin: 2px 0 2px;
+    font-size: 22px; /* menší nadpis */
+  }
+  #header p{
+    display: none;   /* v landscape skryj popisek = víc místa */
+  }
+
+  /* méně paddingu ve wrapperu -> víc místa pro canvas */
+  #wrapper{
+    padding: 4px 6px;
+    gap: 8px;
+  }
+
+  /* toolbar trochu širší, ať tlačítka nejsou "na krev" */
+  #toolbar{
+    flex: 0 0 190px;
+    width: 190px;
+    max-width: 190px;
+  }
+
+  /* barvy zpět jako kruhy (a lehce větší) */
+  .colorBtn{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+  }
+
+  /* tlačítka ať mají stabilní výšku */
+  .sizeBtn{
+    height: 34px;
+    line-height: 34px;
     }
   }
 
-  /* když je v landscape extrémně málo výšky, dej toolbar radši pod canvas */
-  @media (orientation: landscape) and (max-height: 430px){
-    #wrapper{ flex-direction: column; align-items:center; }
-    #toolbar{ flex-direction: row; flex-wrap: wrap; justify-content:center; width:100%; }
-    .colorBtn{ width:32px; height:32px; }
+  /* když je ultra nízká výška (některé iPhony/lišty), ještě víc zmenši */
+  @media (orientation: landscape) and (max-height: 390px){
+    h2{ font-size: 18px; }
+    #toolbar{
+      flex: 0 0 170px;
+      width: 170px;
+      max-width: 170px;
+    }
+    .colorBtn{ width: 34px; height: 34px; }
+    .sizeBtn{ height: 32px; line-height: 32px; }
   }
+
 </style>
 </head>
 
 <body>
-<h2>ESP32 – canvas</h2>
+<div id="header">
+  <h2>ESP32 – canvas</h2>
+  <p>Kresli prstem nebo myší. (Multi zařízení přes WS.)</p>
+</div>
 
 <div id="wrapper">
   <canvas id="canvas"></canvas>
@@ -171,8 +272,6 @@ const char index_html[] PROGMEM = R"rawliteral(
   </div>
 </div>
 
-<p>Kresli prstem nebo myší. (Multi zařízení přes WS.)</p>
-
 <script>
   // ===== HARD ANTI-ZOOM (Android/Samsung + iOS) =====
   document.addEventListener('touchstart', (e) => {
@@ -201,6 +300,7 @@ const char index_html[] PROGMEM = R"rawliteral(
   const canvas  = document.getElementById('canvas');
   const ctx     = canvas.getContext('2d');
   const toolbar = document.getElementById('toolbar');
+  const wrapper = document.getElementById('wrapper');
 
   // ===== logické rozměry canvasu (souřadnice, které posíláme na ESP) =====
   const CANVAS_W = 320, CANVAS_H = 240;
@@ -218,7 +318,6 @@ const char index_html[] PROGMEM = R"rawliteral(
   let currentDpr = window.devicePixelRatio || 1;
 
   function renderFromModel() {
-    // ctx má mít transform na currentDpr (setupCanvas)
     ctx.clearRect(0, 0, CANVAS_W, CANVAS_H);
     ctx.drawImage(modelCanvas, 0, 0, CANVAS_W, CANVAS_H);
   }
@@ -241,7 +340,7 @@ const char index_html[] PROGMEM = R"rawliteral(
   const clientId = Math.random().toString(16).slice(2);
 
   // ===== snapshot persistence =====
-  const SNAP_KEY = "esp32_canvas_snapshot_v2";
+  const SNAP_KEY = "esp32_canvas_snapshot_v3";
 
   function saveSnapshotSoon(){
     if (saveSnapshotSoon._t) return;
@@ -273,28 +372,41 @@ const char index_html[] PROGMEM = R"rawliteral(
     }
   }
 
-  // ===== layout/resize bez mazání =====
+  // ===== layout/resize bez mazání (iOS safe: bere rozměry z wrapperu) =====
   function setupCanvas() {
     currentDpr = window.devicePixelRatio || 1;
 
-    const vw = (window.visualViewport ? window.visualViewport.width : window.innerWidth);
-    const vh = (window.visualViewport ? window.visualViewport.height : window.innerHeight);
-
+    // dostupná velikost = reálně velikost wrapperu
+    const wrapRect = wrapper.getBoundingClientRect();
     const tbRect = toolbar.getBoundingClientRect();
+
     const gap = 10;
     const padding = 16;
 
-    let availW = vw - tbRect.width - gap - padding;
-    if (availW < 200) availW = vw - padding;
+    const isPortrait = wrapRect.height >= wrapRect.width;
 
-    let availH = vh - 140;
-    if (availH < 160) availH = vh - 70;
+    let availW, availH;
 
+    if (isPortrait) {
+      // toolbar dole
+      availW = wrapRect.width - padding;
+      availH = wrapRect.height - tbRect.height - gap - padding;
+    } else {
+      // toolbar vpravo
+      availW = wrapRect.width - tbRect.width - gap - padding;
+      availH = wrapRect.height - padding;
+    }
+
+    // poměr 4:3
     let cssW = Math.min(availW, availH * (CANVAS_W / CANVAS_H));
     let cssH = cssW * (CANVAS_H / CANVAS_W);
 
-    cssW = Math.min(cssW, 520);
-    cssH = Math.min(cssH, 390);
+    // minimální velikost
+    const minW = 220;
+    if (cssW < minW) {
+      cssW = minW;
+      cssH = cssW * (CANVAS_H / CANVAS_W);
+    }
 
     canvas.style.width  = Math.round(cssW) + "px";
     canvas.style.height = Math.round(cssH) + "px";
@@ -312,7 +424,7 @@ const char index_html[] PROGMEM = R"rawliteral(
   let resizeTimer = null;
   function scheduleResize(){
     clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(setupCanvas, 120);
+    resizeTimer = setTimeout(setupCanvas, 140);
   }
 
   setupCanvas();
@@ -320,6 +432,7 @@ const char index_html[] PROGMEM = R"rawliteral(
 
   window.addEventListener('resize', scheduleResize);
   if (window.visualViewport) window.visualViewport.addEventListener('resize', scheduleResize);
+  window.addEventListener('orientationchange', scheduleResize);
 
   // ===== UI barvy =====
   const colorButtons = document.querySelectorAll('.colorBtn');
@@ -369,7 +482,7 @@ const char index_html[] PROGMEM = R"rawliteral(
     socket = new WebSocket('ws://' + window.location.host + '/ws');
     socket.onopen = () => {
       console.log('WS OK');
-      // Požádej o synchronizaci od ostatních klientů
+      // požádej o synchronizaci od ostatních klientů
       sendMsg('sync_req:0,0:#000000:0:pen');
     };
     socket.onclose = () => setTimeout(connectWS, 1000);
