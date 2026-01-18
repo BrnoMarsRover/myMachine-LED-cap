@@ -2,14 +2,14 @@
 
 bool DisplayTFT::begin() {
   tft.init(320, 480);
-  // případně: tft.init(320, 480, ST7796S_BGR);
+  tft.invertDisplay(true);
   tft.setRotation(1);
-  tft.fillScreen(ST77XX_BLACK);
+  tft.fillScreen(ST77XX_WHITE);
   return true;
 }
 
 void DisplayTFT::showBootScreen() {
-  tft.setTextColor(ST77XX_WHITE);
+  tft.setTextColor(ST77XX_BLACK);
   tft.setTextSize(2);
   tft.setCursor(10, 10);
   tft.println("ESP32 Canvas -> TFT");
@@ -30,7 +30,7 @@ uint16_t DisplayTFT::rgb565_from_hex(const String& hex) {
   uint8_t b = (val(hex[5]) << 4) | val(hex[6]);
 
   // tvoje varianta swap G/B
-  return tft.color565(r, b, g);
+  return tft.color565(b, g, r);
 }
 
 void DisplayTFT::drawThickLine(int x0, int y0, int x1, int y1, uint16_t color, int thickness) {
@@ -52,10 +52,10 @@ void DisplayTFT::drawThickLine(int x0, int y0, int x1, int y1, uint16_t color, i
 
 void DisplayTFT::handleDraw(const DrawMsg& m) {
   uint16_t col = rgb565_from_hex(m.color);
-  if (m.tool == "eraser") col = ST77XX_BLACK;
+  if (m.tool == "eraser") col = ST77XX_WHITE;
 
   if (m.type == DrawType::Clear) {
-    tft.fillScreen(ST77XX_BLACK);
+    tft.fillScreen(ST77XX_WHITE);
     penDown = false;
     return;
   }
