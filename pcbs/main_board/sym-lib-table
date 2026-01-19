@@ -6,4 +6,5 @@
   (lib (name "step-up_module")(type "KiCad")(uri "${KIPRJMOD}/libs/customs/step-up_module.kicad_sym")(options "")(descr ""))
   (lib (name "st1l08")(type "KiCad")(uri "${KIPRJMOD}/libs/customs/st1l08.kicad_sym")(options "")(descr ""))
   (lib (name "txu0101")(type "KiCad")(uri "${KIPRJMOD}/libs/customs/txu0101.kicad_sym")(options "")(descr ""))
+  (lib (name "LM74610QDGKRQ1")(type "KiCad")(uri "${KIPRJMOD}/libs/LM74610QDGKRQ1/LM74610QDGKRQ1.kicad_sym")(options "")(descr ""))
 )
