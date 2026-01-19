@@ -798,7 +798,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "S3B-XH-A-E(LF)(SN)"
+		(property "Manufacturer Part Number" "S3B-XH-A-1 (LF)(SN)"
 			(at 190.5 50.8 0)
 			(effects
 				(font
@@ -807,7 +807,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier" "Mouser"
+		(property "Supplier" "TME"
 			(at 190.5 50.8 0)
 			(effects
 				(font
@@ -816,7 +816,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "306-S3BXHAELFSN"
+		(property "Supplier Part Number" "S3B-XH-A-1"
 			(at 190.5 50.8 0)
 			(effects
 				(font
@@ -897,7 +897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "S3B-XH-A-E(LF)(SN)"
+		(property "Manufacturer Part Number" "S3B-XH-A-1 (LF)(SN)"
 			(at 190.5 88.9 0)
 			(effects
 				(font
@@ -906,7 +906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier" "Mouser"
+		(property "Supplier" "TME"
 			(at 190.5 88.9 0)
 			(effects
 				(font
@@ -915,7 +915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "306-S3BXHAELFSN"
+		(property "Supplier Part Number" "S3B-XH-A-1"
 			(at 190.5 88.9 0)
 			(effects
 				(font
@@ -1091,7 +1091,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "S3B-XH-A-E(LF)(SN)"
+		(property "Manufacturer Part Number" "S3B-XH-A-1 (LF)(SN)"
 			(at 166.37 88.9 0)
 			(effects
 				(font
@@ -1100,7 +1100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier" "Mouser"
+		(property "Supplier" "TME"
 			(at 166.37 88.9 0)
 			(effects
 				(font
@@ -1109,7 +1109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "306-S3BXHAELFSN"
+		(property "Supplier Part Number" "S3B-XH-A-1"
 			(at 166.37 88.9 0)
 			(effects
 				(font
@@ -1188,7 +1188,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "S3B-XH-A-E(LF)(SN)"
+		(property "Manufacturer Part Number" "S3B-XH-A-1 (LF)(SN)"
 			(at 166.37 50.8 0)
 			(effects
 				(font
@@ -1197,7 +1197,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier" "Mouser"
+		(property "Supplier" "TME"
 			(at 166.37 50.8 0)
 			(effects
 				(font
@@ -1206,7 +1206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "306-S3BXHAELFSN"
+		(property "Supplier Part Number" "S3B-XH-A-1"
 			(at 166.37 50.8 0)
 			(effects
 				(font

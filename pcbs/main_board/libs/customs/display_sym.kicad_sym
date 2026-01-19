@@ -52,7 +52,7 @@
 		(symbol "display_1_1"
 			(rectangle
 				(start -12.7 16.51)
-				(end 5.08 -7.62)
+				(end 5.08 -5.08)
 				(stroke
 					(width 0)
 					(type solid)
@@ -198,24 +198,6 @@
 					)
 				)
 				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 -5.08 0)
-				(length 2.54)
-				(name "SDO(MISO)"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)

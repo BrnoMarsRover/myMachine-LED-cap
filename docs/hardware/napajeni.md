@@ -6,7 +6,6 @@
 - Step-up modul pro zajištění stabilních 5 V  
 - Lineární regulátor pro zajištění 3,3 V  
 - ESP dev kit modul dále obsahuje svůj vlastní regulátor 3,3 V  
-- Nabíjecí modul  
 
 Celé toto řešení bylo zvoleno z důvodu poměrně vysokých výkonových požadavků LED pásku, u kterého je i po omezení jasu a počtu současně svítících LED očekávána spotřeba 4–5 A. Tato podmínka vyloučila použití běžně dostupných powerbank. Srdcem kšitovky tedy budou dvě Li-Ion baterie, které díky paralelnímu zapojení vyhovují proudovým požadavkům LED pásku.
 
@@ -26,10 +25,3 @@ Udaná spotřeba je orientační. Na tyto hodnoty jsou dimenzovány zdroje a sou
 ||Akcelerometr|1|-|
 
 - *Při zablokování by se měl motor programově vypnout, v zapojení je s měřením proudu motorem počítáno. 
-
-## Nabíjení
-Nabíjení akumulátoru je realizováno buď externě pomocí nabíjecí stanice, nebo prostřednictvím USB rozhraní připojeného k modulu ESP. V souladu s napájecí strukturou znázorněnou na obrázku výše dochází po připojení USB k následujícím stavům:
-
-- Odpojení napájení modulu ESP z externího regulátoru napětí. Použitý vývojový modul (Dev Kit) obsahuje vlastní napěťový regulátor, který je v případě napájení z USB využit. Tato vlastnost představuje jednu z nevýhod použití vývojového modulu.
-
-- Nabíjení akumulátoru prostřednictvím integrovaného nabíjecího obvodu TP4056. Nabíjecí proud je nastavován rezistorem připojeným na pin PROG. Maximální proud dostupný ze standardního USB portu je uvažován 500 mA, přičemž část tohoto proudu je současně využívána pro napájení samotného modulu ESP. Z tohoto důvodu je nabíjecí proud omezen na hodnotu 300 mA.

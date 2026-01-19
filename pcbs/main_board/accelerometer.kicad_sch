@@ -1321,6 +1321,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser number" ""
+			(at 43.18 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8d8032fe-c3c0-4df5-b51b-d611916e5179")
 		)
@@ -1482,6 +1491,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser number" ""
+			(at 87.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "62fd6afb-d839-47ad-9750-038ddbcb259a")
 		)
@@ -1604,6 +1622,15 @@
 			)
 		)
 		(property "Supplier Part Number" "71-CRCW0603910KFKEAH"
+			(at 52.07 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser number" ""
 			(at 52.07 38.1 90)
 			(effects
 				(font
