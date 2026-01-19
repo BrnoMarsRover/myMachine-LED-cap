@@ -27,6 +27,7 @@ Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit
 |Main PCB|-|1|-|-|Objedná se|
 |Top box|-|1|-|-|3D tisk|
 |Top PCB|-|1|-|-|Vyrobí se|
+|Holky|-|cca 10|-|-|hezky a hodny|
 |-|-|-|-|-|-|
 
 
