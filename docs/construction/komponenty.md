@@ -1,5 +1,5 @@
 ## Komponenty
-Všechny komponenty potřebné pro realizaci jedné LED kšiltovky. BOM pro desku plošných spojů bude generovat Kicad, proto je nebude zapisovat do této tabulky.
+Všechny komponenty potřebné pro realizaci jedné LED kšiltovky. Seznam součástek pro PCB je k dispozici jako odkaz v tabulce komponent.
 
 Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit.cz. A dodatečně byl ještě přidán obchod TME.eu
 
@@ -19,7 +19,7 @@ Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit
 |[Vložka se závitem](https://cz.mouser.com/ProductDetail/SI/IUTB-M2.5?qs=7MVldsJ5UaxaLK8FbVq%252B7A%3D%3D)|Mouser|8|9 Kč|72 Kč|153-IUTB-M2.5|
 |[Distanční sloupek](https://cz.mouser.com/c/electromechanical/hardware/standoffs-spacers/?gender=Male%20%2F%20Female&thread%20size=M2.5)|Mouser|8|10 Kč|80 Kč|nutné doladit výšku podle možností  výrobku|
 |[Plochý kabel](https://cz.mouser.com/ProductDetail/3M-Electronic-Solutions-Division/3302-10-CUT-LENGTH?qs=%252BMk1bzH0xpvr9xhpFx7Ydg%3D%3D&mgh=1&utm_id=20232119985&utm_source=google&utm_medium=cpc&utm_marketing_tactic=emeacorp&gad_source=1&gad_campaignid=20236886555&gbraid=0AAAAADn_wf2VO3DW8OIeCv28Xb93r0N4R&gclid=CjwKCAiAmp3LBhAkEiwAJM2JUCoOlVUSquQv8BnloLHfNMG10Exrk25rzWrS6jX5LU7Oekoh3R_xjBoCAXcQAvD_BwE)|Mouser|3|17 Kč|51 Kč|517-3302/10FT|
-|[BOM Main PCB](../hardware/main_board/ibom.html)|Mouser/LaskaKit|1|-|1064 Kč|BOM generované v KiCad|
+|[BOM Main PCB](../hardware/main_board/ibom.html)|Mouser/LaskaKit|1|-|1064 Kč|BOM generované v KiCad *|
 |[BOM Top PCB](../hardware/top_board/ibom.html)|Mouser/LaskaKit|1|-|121 Kč|BOM generované v KiCad|
 |[8 pin JST-XH](https://www.tme.eu/cz/details/xhp-8/signalove-konektory-raster-2-50mm/jst/)|TME|1|2,06 Kč|2,06 Kč|XHP-8|
 |[3 pin JST-XH](https://www.tme.eu/cz/details/xhp-3/signalove-konektory-raster-2-50mm/jst/?brutto=1&currency=CZK&utm_source=google&utm_medium=cpc&utm_campaign=CZECHY%20%5BPLA%5D%20CSS&utm_content=&campaign_id=9886211519&gad_source=1&gad_campaignid=9886211519&gbraid=0AAAAADyylhKE_bA2YErKpxYsOXByGMJDf&gclid=CjwKCAiAmp3LBhAkEiwAJM2JUPujIdeLhJFCcnzHaUfMbcXRi1t0W3Mn8j1tkRea89BtA1XD3UPoFxoCw5MQAvD_BwE)|TME|5|1,46 Kč|7,3 Kč|XHP-3|
@@ -29,6 +29,7 @@ Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit
 |Top box|-|1|-|-|3D tisk|
 |Top PCB|-|1|-|-|Vyrobí se|
 |-|-|-|-|-|-|
+- *Pojistku (652-SF-0603F500-2) je vhodné zakoupit alespoň 5x
 
 
 ### Nabíjení
