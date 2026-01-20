@@ -3,7 +3,12 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "0618002b-5ce9-4bbb-ae45-41e3700feb7a")
-	(paper "A5")
+	(paper "A4")
+	(title_block
+		(title "Main board - MyMachine LED cap")
+		(date "2026-01-20")
+		(company "Brno Mars Rover")
+	)
 	(lib_symbols
 		(symbol "DRV8873HPWPRQ1:DRV8873HPWPRQ1"
 			(pin_names
@@ -2262,17 +2267,6 @@
 			(justify left top)
 		)
 		(uuid "37dc2c00-65d1-4d03-a32d-c6792b492893")
-	)
-	(text "NOTES:\n- Toto schéma mám vyzkoušené"
-		(exclude_from_sim no)
-		(at 161.036 89.662 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "c9fd1746-4d22-4887-9da4-81ad01a6e76c")
 	)
 	(junction
 		(at 123.19 41.91)

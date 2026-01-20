@@ -3,7 +3,12 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "9d3e0542-4645-4be6-90a9-8c81eee8f269")
-	(paper "A5")
+	(paper "A4")
+	(title_block
+		(title "Main board - MyMachine LED cap")
+		(date "2026-01-20")
+		(company "Brno Mars Rover")
+	)
 	(lib_symbols
 		(symbol "Device:R"
 			(pin_numbers

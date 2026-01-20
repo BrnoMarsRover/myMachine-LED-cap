@@ -1734,7 +1734,7 @@
 		(property "Reference" "J2"
 			(at 1.25 -5.1 0)
 			(layer "F.SilkS")
-			(uuid "70d34bf9-2ed7-432d-9952-1de31af11f14")
+			(uuid "14e65036-b4d8-4f03-8538-0a42aec0f9a0")
 			(effects
 				(font
 					(size 1 1)
@@ -1745,7 +1745,7 @@
 		(property "Value" "BAT2"
 			(at 1.25 8.8 0)
 			(layer "F.Fab")
-			(uuid "27ea3ee1-11a0-448a-9231-a95b56d2280e")
+			(uuid "4e1e6083-8e8e-4291-8205-d044eb054ffe")
 			(effects
 				(font
 					(size 1 1)
@@ -1757,7 +1757,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5a68ad6a-2733-43a9-b53a-ee4dd3d8824e")
+			(uuid "71004597-95d4-407c-9340-189a5e9198f3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1769,7 +1769,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5bb08144-8913-4663-8584-c2c2211f3960")
+			(uuid "c2c52da3-0016-4cba-bed5-a8c45e47bcb4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2240,7 +2240,7 @@
 		(property "Reference" "J4"
 			(at 1.25 -5.1 0)
 			(layer "F.SilkS")
-			(uuid "462b6499-8f91-4dbc-9f5e-2bf0443d047e")
+			(uuid "f40fa525-e250-432b-99d4-6f84804d0c7e")
 			(effects
 				(font
 					(size 1 1)
@@ -2251,7 +2251,7 @@
 		(property "Value" "Motor"
 			(at 1.25 8.8 0)
 			(layer "F.Fab")
-			(uuid "643a156d-4c98-45ed-9387-ada12777de6c")
+			(uuid "9f4dcc8b-3515-45dc-8fdc-ab5b6824c079")
 			(effects
 				(font
 					(size 1 1)
@@ -2263,7 +2263,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0c6e73f8-de70-4919-bdfc-f8447490bc69")
+			(uuid "ed55e2c3-c599-4945-b4f8-6ad95f7a6d25")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2275,7 +2275,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f842bad6-7474-44e9-8e6e-eadfc210f649")
+			(uuid "c474cd2c-877d-4cef-b3b4-9b104356cf5d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4379,7 +4379,7 @@
 		(property "Reference" "J3"
 			(at 2.5 -5.1 0)
 			(layer "F.SilkS")
-			(uuid "19e115f0-b3e7-42ca-8419-dfdd6a4844d2")
+			(uuid "1aeb84ca-0425-47ee-a0cc-6a8f6e7f0d67")
 			(effects
 				(font
 					(size 1 1)
@@ -4390,7 +4390,7 @@
 		(property "Value" "LED strip"
 			(at 2.5 8.8 0)
 			(layer "F.Fab")
-			(uuid "a319f9e0-ab97-4f7d-974a-a817be0a777b")
+			(uuid "88969428-0864-4f7e-988f-68223d63b2b9")
 			(effects
 				(font
 					(size 1 1)
@@ -4402,7 +4402,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d324d515-26a8-494d-9191-fe5a080d0cce")
+			(uuid "cf80ee34-8b6e-4d60-b617-db4b8534879a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4414,7 +4414,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3571016b-07cc-4b16-a1bb-8a253510e464")
+			(uuid "779a245c-11e1-4a9d-8639-c394d828f33d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6839,7 +6839,7 @@
 		(property "Reference" "U4"
 			(at 8.75 -5.1 0)
 			(layer "F.SilkS")
-			(uuid "eef60f5b-629e-48d1-8b18-a1b5ca5ef30f")
+			(uuid "98928677-4f96-4052-9370-e968a93df44b")
 			(effects
 				(font
 					(size 1 1)
@@ -6850,7 +6850,7 @@
 		(property "Value" "Display"
 			(at 8.75 8.8 0)
 			(layer "F.Fab")
-			(uuid "29672ff3-4b3e-4ae5-9da7-531cd8e502b2")
+			(uuid "70fb90ed-c080-43b3-bebb-66584a02e3ec")
 			(effects
 				(font
 					(size 1 1)
@@ -6862,7 +6862,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "251714b0-7f55-41da-aaad-5f756fe8a693")
+			(uuid "b599daf2-0273-4cbd-8317-e7f499ed16e6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6874,7 +6874,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "60e39be7-c40f-4df5-95aa-7cd44776c75c")
+			(uuid "b4b7b1e6-c846-4b13-8216-c79845d7ed82")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9602,7 +9602,7 @@
 		(property "Reference" "SW1"
 			(at 1.25 -5.1 0)
 			(layer "F.SilkS")
-			(uuid "4e004e8a-20d2-4207-919d-f7d34c401e58")
+			(uuid "6276135a-c5d2-43aa-b0fe-84d84ac67dc1")
 			(effects
 				(font
 					(size 1 1)
@@ -9613,7 +9613,7 @@
 		(property "Value" "Power switch"
 			(at 1.25 8.8 0)
 			(layer "F.Fab")
-			(uuid "11439df7-142e-4764-9a95-869b75d8ab33")
+			(uuid "c54749f4-bba4-45a1-a1da-b6ab6e78ec04")
 			(effects
 				(font
 					(size 1 1)
@@ -9625,7 +9625,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fe1464f1-1ec8-41b7-a77d-b6f8711afc5d")
+			(uuid "cf5b8eb6-8d1b-4588-8e44-778060c38b98")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9637,7 +9637,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3372018a-1202-4caf-839a-81720cd7275d")
+			(uuid "f0f2d8b8-56b9-45b2-b35c-5973f42c4579")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18138,7 +18138,7 @@
 		(property "Reference" "J1"
 			(at 1.25 -5.1 0)
 			(layer "F.SilkS")
-			(uuid "40b2662d-5666-44f1-a2bd-ec745442c3cd")
+			(uuid "c00d58e3-92ca-48fc-a907-0503da2c9a0e")
 			(effects
 				(font
 					(size 1 1)
@@ -18149,7 +18149,7 @@
 		(property "Value" "BAT1"
 			(at 1.25 8.8 0)
 			(layer "F.Fab")
-			(uuid "ae5978db-b2a1-4b0f-b207-451980654a97")
+			(uuid "655b74a6-5723-4559-9726-5007595b74fe")
 			(effects
 				(font
 					(size 1 1)
@@ -18161,7 +18161,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a368eb08-60c1-42af-ad16-057b828e82db")
+			(uuid "6b824fc5-888c-4bb8-aa18-616068eeb4e8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18173,7 +18173,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "19a01e5a-3d54-4107-bdd4-3f937a221b21")
+			(uuid "2263c330-26bc-49ab-8d93-423fc7a28c21")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21685,7 +21685,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "NOTES:\n- Rozměry PCB převzaty z modelu ve Fusionu\n- navrhl jsem umístění ESP, je potřeba ho umístit někam, kam se snadno vejde USB kabel, \n  takže se klidně může přemístit, ale je třeba na to myslet\n- Když na to tak koukám, tak se vše pravděpodobně nevejde na jednu stranu,\n  oboustrané PCB nevadí, jen by bylo vhodné dát na stranu FRONT konektory. A podle modelu\n  ve fusionu kouknout kam to na BOTTOM stranu dát.\n- Co se týče konektorů obecně myslet na to, že za hranicí desky už bude stěna. A kabel z té strany\n  nepůjde připojit. Vůbec bych se tedy nebál nechat stranu FRONT pouze konektorům (a ESP), \n  ať se tam konektory strkají lépe.\n- U konektoru na displej je potřeba ohlídat jeho orientaci, případně přečíslovat footprint. \n  Cílem je, aby se kabel od displeje nekřížil, ale šel pěkně rovně. (Konektor displeje se bude\n  nacházet na levé straně (označeno komentářem).\n- Co se šířky cest týče, tak velký proud (4 A) poteče jen BATERIE -- LED PÁSEK\n- Menší výřez z nějaké strany v PCB by mohl být praktický pro protažení kabelů od baterií, \n  LED pásku a motoru."
+	(gr_text "NOTES:\n- Rozměry PCB převzaty z modelu ve Fusionu\n- navrhl jsem umístění ESP, je potřeba ho umístit někam, kam se snadno vejde USB kabel, \n  takže se klidně může přemístit, ale je třeba na to myslet\n- Když na to tak koukám, tak se vše pravděpodobně nevejde na jednu stranu,\n  oboustrané PCB nevadí, jen by bylo vhodné dát na stranu FRONT konektory.\n- Co se týče konektorů obecně myslet na to, že za hranicí desky už bude stěna. A kabel z té strany\n  nepůjde připojit. Vůbec bych se tedy nebál nechat stranu FRONT pouze konektorům (a ESP), \n  ať se tam konektory strkají lépe.\n- U konektoru na displej je potřeba ohlídat jeho orientaci, případně přečíslovat footprint. \n  Cílem je, aby se kabel od displeje nekřížil, ale šel pěkně rovně. (Konektor displeje se bude\n  nacházet na levé straně (označeno komentářem).\n- Co se šířky cest týče, tak velký proud (4 A) poteče jen BATERIE -- LED PÁSEK\n- Menší výřez z nějaké strany v PCB by mohl být praktický pro protažení kabelů od baterií, \n  LED pásku a motoru."
 		(at 18.44 108.41 0)
 		(layer "Dwgs.User")
 		(uuid "c340f277-d006-4a89-a52f-fbee504a7669")

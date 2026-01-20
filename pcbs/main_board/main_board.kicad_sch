@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "86b00c07-962a-4c6d-8d05-813891e412c9")
 	(paper "A4")
+	(title_block
+		(title "Main board - MyMachine LED cap")
+		(date "2026-01-20")
+		(company "Brno Mars Rover")
+	)
 	(lib_symbols
 		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
@@ -2209,17 +2214,6 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(text "TODO:\n\n"
-		(exclude_from_sim no)
-		(at 178.562 152.908 0)
-		(effects
-			(font
-				(size 1.778 1.778)
-			)
-			(justify left top)
-		)
-		(uuid "4646083e-13d5-4bce-8c04-d4b91e88a04d")
 	)
 	(text "Pomůcka při zapojování"
 		(exclude_from_sim no)

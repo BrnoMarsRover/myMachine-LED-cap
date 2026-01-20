@@ -6,7 +6,7 @@ Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit
 ## Tabulka komponent
 | Název | Obchod | Množství | Cena (ks) | Cena celkem | Poznámka |
 |-------|--------|----------|-----------|-------------|----------|
-|[Kšitovka](https://www.bezpotisku.cz/produkt/ksiltovka-buzz?col=18414&size=15&gad_source=1&gad_campaignid=13893141570&gbraid=0AAAAADgnDC3bWexJbzssWqGax6VS7a4xK&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCJfhRbJ6QmqyHTkU7CmJ6fagzgNJ62XCFseTE7ik3A8ZnbrpuyNKthoCANAQAvD_BwE)|Bezpotisku|1|99 Kč|99 Kč|Může být i jiná|
+|[Kšiltovka](https://www.bezpotisku.cz/produkt/ksiltovka-buzz?col=18414&size=15&gad_source=1&gad_campaignid=13893141570&gbraid=0AAAAADgnDC3bWexJbzssWqGax6VS7a4xK&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCJfhRbJ6QmqyHTkU7CmJ6fagzgNJ62XCFseTE7ik3A8ZnbrpuyNKthoCANAQAvD_BwE)|Bezpotisku|1|99 Kč|99 Kč|Může být i jiná|
 |[Displej](https://www.laskakit.cz/en/4-0--480x320-tft-displej--st7796--spi--dotykovy/)|LaskaKit|1|598 Kč|598 Kč|LA141073|
 |[LED Neopixel](https://www.laskakit.cz/en/led-pasek-neopixel-ws2812b-144led-m-ip65-1m-cerny/?utm_source=google&utm_medium=cpc&utm_campaign=1_PLA_All_ROAS_%5BCZ%5D_tROAS_600%2F500&utm_id=1371265813&gad_source=1&gad_campaignid=1371265813&gbraid=0AAAAADPjitIueCNChxL4Y545pPkBaFS2a&gclid=Cj0KCQiA_8TJBhDNARIsAPX5qxSiWFBwfPPienp5ZWqcza1n9ikFo_yKG8FrUtmlRCfcvK896C5o-04aAqs_EALw_wcB)|LaskaKit|1,2 m|488 Kč|586 Kč|LA145022F (kupme 2m)|
 |[Bateriový box](https://www.laskakit.cz/bateriovy-box-1x18650-dratove-vyvody/)|LaskaKit|2|12 Kč|24 Kč|LA123057|

@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "8b9dfd7f-76a9-43bc-8f5a-ce5eba507fc7")
 	(paper "A4")
+	(title_block
+		(title "Main board - MyMachine LED cap")
+		(date "2026-01-20")
+		(company "Brno Mars Rover")
+	)
 	(lib_symbols
 		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
