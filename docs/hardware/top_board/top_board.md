@@ -2,9 +2,11 @@
 
 ## BOM
 
-[Otevřít interaktivní BOM (iBOM)](ibom.html)
+[Otevřít interaktivní BOM](ibom.html)
 
 ## Schéma
+
+[Otevřít schéma](schematic_v0.0.pdf)
 
 ## Popis
 
