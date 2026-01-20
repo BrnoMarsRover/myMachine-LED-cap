@@ -11179,15 +11179,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 189.23 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "3"
 			(uuid "6e558717-3ac8-405e-ad61-b77e8d1f7f8b")
 		)
@@ -11297,15 +11288,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 71.12 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "b1600d13-addf-4a93-a12d-eb08c7b3c6f2")
 		)
@@ -11395,15 +11377,6 @@
 			)
 		)
 		(property "Supplier Part Number" "~"
-			(at 46.99 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 46.99 101.6 90)
 			(effects
 				(font
@@ -11635,15 +11608,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 38.1 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "4dd86179-ff38-42da-b1fb-439ce461c5bc")
 		)
@@ -11804,15 +11768,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 224.79 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "aefe3f02-ed2b-433d-ba93-74a85fadfb7d")
 		)
@@ -11902,15 +11857,6 @@
 			)
 		)
 		(property "Supplier Part Number" "306-S2BXHABKLFSN"
-			(at 257.81 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 257.81 71.12 0)
 			(effects
 				(font
@@ -12016,15 +11962,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 238.76 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "4fa85cda-5b1f-4b48-9359-b6e69099d7bb")
 		)
@@ -12114,15 +12051,6 @@
 			)
 		)
 		(property "Supplier Part Number" "80-T491X107K016AT"
-			(at 196.85 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 196.85 50.8 0)
 			(effects
 				(font
@@ -12286,15 +12214,6 @@
 			)
 		)
 		(property "Supplier Part Number" "581-TCN4108M006R0055"
-			(at 85.09 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 85.09 29.21 0)
 			(effects
 				(font
@@ -13061,15 +12980,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 148.59 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "32"
 			(uuid "96829d0e-8f6b-4872-a174-fc1ff24474db")
 		)
@@ -13278,15 +13188,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 161.29 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "07e6d0b9-1aaa-4d0b-a056-faddb75f22fe")
 		)
@@ -13376,15 +13277,6 @@
 			)
 		)
 		(property "Supplier Part Number" "603-CC603KRX7R9BB103"
-			(at 182.88 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 182.88 50.8 0)
 			(effects
 				(font

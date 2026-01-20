@@ -816,15 +816,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 130.81 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "2145eb66-c672-4e1f-b654-5616a645c471")
 		)
@@ -985,15 +976,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 118.11 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "41a50d22-d918-491c-95c5-18133b9446a0")
 		)
@@ -1147,15 +1129,6 @@
 			)
 		)
 		(property "Supplier Part Number" "595-TXU0101DBVR"
-			(at 105.41 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 105.41 66.04 0)
 			(effects
 				(font
@@ -1330,15 +1303,6 @@
 		)
 		(property "Supplier Part Number" "603-CC603JRX7R9BB104"
 			(at 93.98 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
-			(at 93.98 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)

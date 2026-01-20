@@ -3415,33 +3415,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "NMOS"
-			(at 59.055 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 57.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 60.96 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer Part Number" "IRF8714TRPBFXTMA1"
 			(at 76.2 26.67 90)
 			(effects
@@ -3461,15 +3434,6 @@
 			)
 		)
 		(property "Supplier Part Number" "726-IRF8714TRPBFXTMA"
-			(at 76.2 26.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 76.2 26.67 90)
 			(effects
 				(font
@@ -3585,15 +3549,6 @@
 			)
 		)
 		(property "Supplier Part Number" "604-APTD2012LCGCK "
-			(at 243.84 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 243.84 72.39 90)
 			(effects
 				(font
@@ -3962,15 +3917,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 250.19 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "097b859f-3266-46f5-baf3-07b99e512c62")
 		)
@@ -4105,126 +4051,6 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Texas Instruments"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1.10 mm"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "VSSOP-8 Texas Instruments"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/LM74610QDGKRQ1/Texas+Instruments/view-part/?ref=eda"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC-7351B"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "B"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/LM74610QDGKRQ1/Texas+Instruments/view-part/?ref=snap"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "LM74610QDGKRQ1"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "0.48-V to 42-V, zero IQ automotive ideal diode controller"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Texas Instruments"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer Part Number" "LM74610QDGKRQ1"
 			(at 83.82 111.76 0)
 			(effects
@@ -4244,15 +4070,6 @@
 			)
 		)
 		(property "Supplier Part Number" "595-LM74610QDGKRQ1"
-			(at 83.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 83.82 111.76 0)
 			(effects
 				(font
@@ -4508,15 +4325,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 198.12 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "de14f7dc-65f1-40dc-bd90-2cf1ba8183c7")
 		)
@@ -4744,15 +4552,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 137.16 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "6199d769-92a9-46d4-b3fe-4190f3fc87b1")
 		)
@@ -4850,15 +4649,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 165.1 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "81319bfb-5b34-47ff-b2f0-1da7a272d605")
 		)
@@ -4945,15 +4735,6 @@
 			)
 		)
 		(property "Supplier Part Number" "306-S2BXHABKLFSN"
-			(at 168.91 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 168.91 48.26 0)
 			(effects
 				(font
@@ -5121,15 +4902,6 @@
 			)
 		)
 		(property "Supplier Part Number" "511-ST1L08SPU33R"
-			(at 227.33 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 227.33 138.43 0)
 			(effects
 				(font
@@ -5314,15 +5086,6 @@
 			)
 		)
 		(property "Supplier Part Number" "71-CRCW060322K0FKEBC "
-			(at 198.12 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 198.12 59.69 0)
 			(effects
 				(font
@@ -5626,15 +5389,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 139.7 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "738ff014-3a95-4e7d-b012-7a86b13adf2c")
 		)
@@ -5735,15 +5489,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 261.62 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "fa3aafeb-ccdf-48f4-b06d-552e97a061f0")
 		)
@@ -5831,15 +5576,6 @@
 			)
 		)
 		(property "Supplier" "Mouser"
-			(at 29.21 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 29.21 26.67 0)
 			(effects
 				(font
@@ -5944,15 +5680,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 50.8 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "1da7f4c6-ac46-44af-a66c-5a91b16220af")
 		)
@@ -6042,15 +5769,6 @@
 			)
 		)
 		(property "Supplier Part Number" "603-AR0603FR-072KL"
-			(at 243.84 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 243.84 59.69 0)
 			(effects
 				(font
@@ -6352,15 +6070,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 29.21 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "980a37c5-083c-44a7-ba48-d596ec19c51c")
 		)
@@ -6495,126 +6204,6 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Texas Instruments"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1.10 mm"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "VSSOP-8 Texas Instruments"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/LM74610QDGKRQ1/Texas+Instruments/view-part/?ref=eda"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC-7351B"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "B"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/LM74610QDGKRQ1/Texas+Instruments/view-part/?ref=snap"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "LM74610QDGKRQ1"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "0.48-V to 42-V, zero IQ automotive ideal diode controller"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Texas Instruments"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer Part Number" "LM74610QDGKRQ1"
 			(at 83.82 53.34 0)
 			(effects
@@ -6634,15 +6223,6 @@
 			)
 		)
 		(property "Supplier Part Number" "595-LM74610QDGKRQ1"
-			(at 83.82 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 83.82 53.34 0)
 			(effects
 				(font
@@ -6766,15 +6346,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 165.1 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "3a84ce57-2596-494a-b3ac-99850803dbc8")
 		)
@@ -6843,33 +6414,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "NMOS"
-			(at 59.055 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 57.15 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 60.96 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer Part Number" "IRF8714TRPBFXTMA1"
 			(at 76.2 85.09 90)
 			(effects
@@ -6889,15 +6433,6 @@
 			)
 		)
 		(property "Supplier Part Number" "726-IRF8714TRPBFXTMA"
-			(at 76.2 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
 			(at 76.2 85.09 90)
 			(effects
 				(font
@@ -7154,15 +6689,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 261.62 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "70ef9c65-b801-454b-ad44-f154ab7fbd44")
 		)
@@ -7259,15 +6785,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 50.8 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "b6d6b44a-0d3f-45e7-b6a7-8da1c1f49067")
 		)
@@ -7355,15 +6872,6 @@
 		)
 		(property "Supplier Part Number" "80-C0603C106M8PLR"
 			(at 207.01 140.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser number" ""
-			(at 207.01 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)

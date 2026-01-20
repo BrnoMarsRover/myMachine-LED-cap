@@ -816,15 +816,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser number" ""
-			(at 105.41 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "4"
 			(uuid "a4788038-8b84-4f72-8ace-cd8bb09a5a49")
 		)
