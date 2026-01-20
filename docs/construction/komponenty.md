@@ -29,6 +29,7 @@ Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit
 |Top box|-|1|-|-|3D tisk|
 |Top PCB|-|1|-|-|Vyrobí se|
 |-|-|-|-|-|-|
+
 - *Pojistku (652-SF-0603F500-2) je vhodné zakoupit alespoň 5x
 
 
