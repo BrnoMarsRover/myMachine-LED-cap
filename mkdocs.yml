@@ -18,10 +18,7 @@ nav:
       - Architektura a zapojení: hardware/zapojeni.md
       - Napájení systému: hardware/napajeni.md
       - Pinout: hardware/pinout.md
-      - Main board:
-            - BOM: hardware/main_board/bom.md
-      - Top board:
-            - Popis: hardware/top_board/top_board.md
-            - BOM: hardware/top_board/bom.md    
+      - Main board: hardware/main_board/main_board.md
+      - Top board: hardware/top_board/top_board.md    
   - Software:
       - Motivace: software/example.md

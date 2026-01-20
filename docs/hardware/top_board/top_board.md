@@ -1,4 +1,12 @@
-## Top board
+# Top board
+
+## BOM
+
+[Otevřít interaktivní BOM (iBOM)](ibom.html)
+
+## Schéma
+
+## Popis
 
 Horní deska slouží ke dvěma účelům - zaprvé drží motor, zadruhé jsou na ní konektory k motoru a k ledpáskům.
 
