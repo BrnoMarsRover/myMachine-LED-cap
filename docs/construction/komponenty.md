@@ -8,16 +8,16 @@ Primárně je snaha všechny komponenty vybírat z obchodu Mouser.com a LaskaKit
 |-------|--------|----------|-----------|-------------|----------|
 |Kšitovka|-|-|-|-|Libovolně|
 |[Displej](https://www.laskakit.cz/en/4-0--480x320-tft-displej--st7796--spi--dotykovy/)|LaskaKit|1|598 Kč|598 Kč|LA141073|
-|[LED Neopixel](https://www.laskakit.cz/en/led-pasek-neopixel-ws2812b-144led-m-ip65-1m-cerny/?utm_source=google&utm_medium=cpc&utm_campaign=1_PLA_All_ROAS_%5BCZ%5D_tROAS_600%2F500&utm_id=1371265813&gad_source=1&gad_campaignid=1371265813&gbraid=0AAAAADPjitIueCNChxL4Y545pPkBaFS2a&gclid=Cj0KCQiA_8TJBhDNARIsAPX5qxSiWFBwfPPienp5ZWqcza1n9ikFo_yKG8FrUtmlRCfcvK896C5o-04aAqs_EALw_wcB)|LaskaKit|1,2 m|488 Kč|586 Kč|LA145022F|
+|[LED Neopixel](https://www.laskakit.cz/en/led-pasek-neopixel-ws2812b-144led-m-ip65-1m-cerny/?utm_source=google&utm_medium=cpc&utm_campaign=1_PLA_All_ROAS_%5BCZ%5D_tROAS_600%2F500&utm_id=1371265813&gad_source=1&gad_campaignid=1371265813&gbraid=0AAAAADPjitIueCNChxL4Y545pPkBaFS2a&gclid=Cj0KCQiA_8TJBhDNARIsAPX5qxSiWFBwfPPienp5ZWqcza1n9ikFo_yKG8FrUtmlRCfcvK896C5o-04aAqs_EALw_wcB)|LaskaKit|1,2 m|488 Kč|586 Kč|LA145022F (kupme 2m)|
 |[Bateriový box](https://www.laskakit.cz/bateriovy-box-1x18650-dratove-vyvody/)|LaskaKit|2|12 Kč|24 Kč|LA123057|
 |[Baterie Li-Ion](https://www.laskakit.cz/geb-li-ion-baterie-18650-3200mah-3-7v/)|LaskaKit|2|158 Kč|316 Kč|LA123134|
 |[Krimpovací pin](https://www.laskakit.cz/pin-pro-konektor-jst-xh/)|LaskaKit|50|1 Kč|50 Kč|LA217022|
 |[Dupont lišta](https://www.laskakit.cz/yxcon-p125-1140a0bs116a1-dupont-kolikova-lista-40pin-2-54mm-pozlacena-jednorada-prima/)|LaskaKit|1|14 Kč|14 Kč|LA217089B|
 |[Nabíječka](https://www.laskakit.cz/en/nabijecka-liitokala-lii-pd4-pro-li-ion--li-fe-a-ni-mh-baterie/)|LaskaKit|1|668|668|LA123099|
-|[Dual-Lock zip](https://www.3market.cz/sj-3870-samolepici-suchy-zip-3m-dual-lock--lepeni-kovu--povrchu-s-praskovymi-laky--plastu-typu-plexiskla--polykarbonatu-a-abs--cena-za-bezny-metr--exterier-a-interier/)|3market|1 m|108,4 Kč|108,4 Kč|7100214419|
+|[Dual-Lock zip](https://www.3market.cz/sj-3870-samolepici-suchy-zip-3m-dual-lock--lepeni-kovu--povrchu-s-praskovymi-laky--plastu-typu-plexiskla--polykarbonatu-a-abs--cena-za-bezny-metr--exterier-a-interier/)|3market|2 m|108,4 Kč|216,8 Kč|7100214419|
 |[Switch](https://cz.mouser.com/ProductDetail/E-Switch/RD151C112F?qs=QtyuwXswaQg7j8DbOZUpHw%3D%3D)|Mouser|1|19,81 Kč|19,81 Kč|612-RD151C112F|
 |[Vložka se závitem](https://cz.mouser.com/ProductDetail/SI/IUTB-M2.5?qs=7MVldsJ5UaxaLK8FbVq%252B7A%3D%3D)|Mouser|8|9 Kč|72 Kč|153-IUTB-M2.5|
-|[Distanční sloupek](https://cz.mouser.com/c/electromechanical/hardware/standoffs-spacers/?gender=Male%20%2F%20Female&thread%20size=M2.5)|Mouser|8|10 Kč|80 Kč|nutné doladit výšku podle možností  výrobku|
+|[Distanční sloupek](https://cz.mouser.com/c/electromechanical/hardware/standoffs-spacers/?gender=Male%20%2F%20Female&thread%20size=M2.5)|Mouser|8|10 Kč|80 Kč|zatím nekupovat|
 |[Plochý kabel](https://cz.mouser.com/ProductDetail/3M-Electronic-Solutions-Division/3302-10-CUT-LENGTH?qs=%252BMk1bzH0xpvr9xhpFx7Ydg%3D%3D&mgh=1&utm_id=20232119985&utm_source=google&utm_medium=cpc&utm_marketing_tactic=emeacorp&gad_source=1&gad_campaignid=20236886555&gbraid=0AAAAADn_wf2VO3DW8OIeCv28Xb93r0N4R&gclid=CjwKCAiAmp3LBhAkEiwAJM2JUCoOlVUSquQv8BnloLHfNMG10Exrk25rzWrS6jX5LU7Oekoh3R_xjBoCAXcQAvD_BwE)|Mouser|3|17 Kč|51 Kč|517-3302/10FT|
 |[BOM Main PCB](../hardware/main_board/ibom.html)|Mouser/LaskaKit|1|-|1064 Kč|BOM generované v KiCad *|
 |[BOM Top PCB](../hardware/top_board/ibom.html)|Mouser/LaskaKit|1|-|121 Kč|BOM generované v KiCad|
