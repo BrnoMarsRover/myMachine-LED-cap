@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Pinout - My Machine LED kšiltovka</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Pinout";
+        var mkdocs_page_input_path = "hardware/pinout.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My Machine LED kšiltovka
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../big_picture/">Big Picture</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Konstrukce</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../construction/komponenty/">Komponenty</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../construction/navody/">Návody</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hardware</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../zapojeni/">Architektura a zapojení</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../napajeni/">Napájení systému</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Pinout</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../main_board/main_board/">Main board</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../top_board/top_board/">Top board</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../software/example/">Motivace</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Machine LED kšiltovka</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Hardware</li>
+      <li class="breadcrumb-item active">Pinout</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/BrnoMarsRover/myMachine-LED-cap/edit/main/docs/hardware/pinout.md">Edit on BrnoMarsRover/myMachine-LED-cap</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="pinout-mh-et-live-esp32-minikit-esp32-wroom-32-40-pinu">Pinout – MH-ET LIVE ESP32 MiniKIT (ESP32-WROOM-32, 40 pinů)</h2>
+<p><img alt="Pinout ESP32" src="../../images/esp_pinout.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>GPIO</th>
+<th>Typ</th>
+<th>Výchozí funkce</th>
+<th>Možné použití</th>
+<th>Použítí</th>
+<th>Poznámka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GND</td>
+<td>PWR</td>
+<td>Zem</td>
+<td>GND</td>
+<td>GND</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>3V3</td>
+<td>PWR</td>
+<td>3.3 V výstup</td>
+<td>VCC</td>
+<td>Zdroj 3.3V</td>
+<td>Max ~600 mA</td>
+</tr>
+<tr>
+<td>3</td>
+<td>EN</td>
+<td>CTRL</td>
+<td>Chip enable</td>
+<td>Reset</td>
+<td></td>
+<td>LOW = reset</td>
+</tr>
+<tr>
+<td>4</td>
+<td>GPIO36</td>
+<td>ADC</td>
+<td>ADC1_CH0</td>
+<td>Analog IN</td>
+<td>M_IPROP</td>
+<td>Pouze vstup, <strong>OK s Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>GPIO39</td>
+<td>ADC</td>
+<td>ADC1_CH3</td>
+<td>Analog IN</td>
+<td></td>
+<td>Pouze vstup, <strong>OK s Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>GPIO34</td>
+<td>ADC</td>
+<td>ADC1_CH6</td>
+<td>Analog IN</td>
+<td>B_STATUS</td>
+<td>Pouze vstup, <strong>OK s Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td>GPIO35</td>
+<td>ADC</td>
+<td>ADC1_CH7</td>
+<td>Analog IN</td>
+<td></td>
+<td>Pouze vstup, <strong>OK s Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>GPIO32</td>
+<td>IO</td>
+<td>ADC1_CH4</td>
+<td>GPIO / ADC</td>
+<td>M_SLEEP</td>
+<td><strong>OK s Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td>GPIO33</td>
+<td>IO</td>
+<td>ADC1_CH5</td>
+<td>GPIO / ADC</td>
+<td>D_RESET</td>
+<td><strong>OK s Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>GPIO25</td>
+<td>IO</td>
+<td>DAC1 / ADC2</td>
+<td>GPIO / DAC</td>
+<td>M_FAULT</td>
+<td>⚠ ADC2 <strong>nefunguje s Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>11</td>
+<td>GPIO26</td>
+<td>IO</td>
+<td>DAC2 / ADC2</td>
+<td>GPIO / DAC</td>
+<td>ID_0</td>
+<td>⚠ ADC2 <strong>nefunguje s Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>12</td>
+<td>GPIO27</td>
+<td>IO</td>
+<td>ADC2_CH7</td>
+<td>GPIO / Touch</td>
+<td>ID_1</td>
+<td>⚠ ADC2 <strong>nefunguje s Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>13</td>
+<td>GPIO14</td>
+<td>IO</td>
+<td>HSPI CLK</td>
+<td>SPI / GPIO</td>
+<td>D_DC/RS</td>
+<td>⚠ ADC2, strapping</td>
+</tr>
+<tr>
+<td>14</td>
+<td>GPIO12</td>
+<td>IO</td>
+<td>ADC2_CH5</td>
+<td>GPIO</td>
+<td></td>
+<td>⚠ Strapping, <strong>ADC2 + Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>15</td>
+<td>GND</td>
+<td>PWR</td>
+<td>Zem</td>
+<td>GND</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>GPIO13</td>
+<td>IO</td>
+<td>HSPI MOSI</td>
+<td>SPI / GPIO</td>
+<td></td>
+<td>⚠ ADC2 <strong>nefunguje s Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>17</td>
+<td>GPIO9</td>
+<td>FLASH</td>
+<td>SPI Flash</td>
+<td>—</td>
+<td></td>
+<td>Nepoužívat</td>
+</tr>
+<tr>
+<td>18</td>
+<td>GPIO10</td>
+<td>FLASH</td>
+<td>SPI Flash</td>
+<td>—</td>
+<td></td>
+<td>Nepoužívat</td>
+</tr>
+<tr>
+<td>19</td>
+<td>GPIO11</td>
+<td>FLASH</td>
+<td>SPI Flash</td>
+<td>—</td>
+<td></td>
+<td>Nepoužívat</td>
+</tr>
+<tr>
+<td>20</td>
+<td>GPIO6</td>
+<td>FLASH</td>
+<td>SPI Flash</td>
+<td>—</td>
+<td></td>
+<td>Nepoužívat</td>
+</tr>
+<tr>
+<td>21</td>
+<td>GPIO7</td>
+<td>FLASH</td>
+<td>SPI Flash</td>
+<td>—</td>
+<td></td>
+<td>Nepoužívat</td>
+</tr>
+<tr>
+<td>22</td>
+<td>GPIO8</td>
+<td>FLASH</td>
+<td>SPI Flash</td>
+<td>—</td>
+<td></td>
+<td>Nepoužívat</td>
+</tr>
+<tr>
+<td>23</td>
+<td>GPIO15</td>
+<td>IO</td>
+<td>HSPI CS</td>
+<td>GPIO / SPI</td>
+<td></td>
+<td>⚠ Strapping, ADC2</td>
+</tr>
+<tr>
+<td>24</td>
+<td>GPIO2</td>
+<td>IO</td>
+<td>BOOT</td>
+<td>GPIO / LED</td>
+<td>M_DIR</td>
+<td>⚠ HIGH při bootu, ADC2</td>
+</tr>
+<tr>
+<td>25</td>
+<td>GPIO0</td>
+<td>IO</td>
+<td>BOOT</td>
+<td>GPIO / BOOT</td>
+<td>M_PWM</td>
+<td>⚠ LOW = flash, ADC2</td>
+</tr>
+<tr>
+<td>26</td>
+<td>GPIO4</td>
+<td>IO</td>
+<td>GPIO</td>
+<td>GPIO</td>
+<td>LED_DATA</td>
+<td>⚠ ADC2 <strong>Wi-Fi</strong></td>
+</tr>
+<tr>
+<td>27</td>
+<td>GPIO16</td>
+<td>IO</td>
+<td>UART2 RX</td>
+<td>GPIO / UART</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>28</td>
+<td>GPIO17</td>
+<td>IO</td>
+<td>UART2 TX</td>
+<td>GPIO / UART</td>
+<td>A_INT</td>
+<td></td>
+</tr>
+<tr>
+<td>29</td>
+<td>GPIO5</td>
+<td>IO</td>
+<td>VSPI CS</td>
+<td>GPIO / SPI</td>
+<td>D_CS</td>
+<td>⚠ Strapping</td>
+</tr>
+<tr>
+<td>30</td>
+<td>GPIO18</td>
+<td>IO</td>
+<td>VSPI SCK</td>
+<td>GPIO / SPI</td>
+<td>D_SCK</td>
+<td></td>
+</tr>
+<tr>
+<td>31</td>
+<td>GPIO19</td>
+<td>IO</td>
+<td>VSPI MISO</td>
+<td>GPIO / SPI</td>
+<td>D_MOSI</td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>GND</td>
+<td>PWR</td>
+<td>Zem</td>
+<td>GND</td>
+<td>GND</td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>GPIO21</td>
+<td>IO</td>
+<td>I2C SDA</td>
+<td>GPIO / I2C</td>
+<td>A_SDA</td>
+<td>Doporučeno</td>
+</tr>
+<tr>
+<td>34</td>
+<td>GPIO3</td>
+<td>IO</td>
+<td>UART0 RX</td>
+<td>GPIO / UART</td>
+<td></td>
+<td>USB serial</td>
+</tr>
+<tr>
+<td>35</td>
+<td>GPIO1</td>
+<td>IO</td>
+<td>UART0 TX</td>
+<td>GPIO / UART</td>
+<td></td>
+<td>USB serial</td>
+</tr>
+<tr>
+<td>36</td>
+<td>GPIO22</td>
+<td>IO</td>
+<td>I2C SCL</td>
+<td>GPIO / I2C</td>
+<td>A_SCL</td>
+<td>Doporučeno</td>
+</tr>
+<tr>
+<td>37</td>
+<td>GPIO23</td>
+<td>IO</td>
+<td>VSPI MOSI</td>
+<td>GPIO / SPI</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>38</td>
+<td>GND</td>
+<td>PWR</td>
+<td>Zem</td>
+<td>GND</td>
+<td>GND</td>
+<td></td>
+</tr>
+<tr>
+<td>39</td>
+<td>GPIO24</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td></td>
+<td>(neexistuje)</td>
+</tr>
+<tr>
+<td>40</td>
+<td>GND</td>
+<td>PWR</td>
+<td>Zem</td>
+<td>GND</td>
+<td>GND</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Poznámka k Wi-Fi:</strong><br />
+Při zapnuté Wi-Fi nelze používat <strong>ADC2</strong> (<code>GPIO 0,2,4,12–15,25–27</code>).<br />
+Pro analogové měření používej výhradně <strong>ADC1 (GPIO 32–39)</strong>.</p>
+<p><strong>Legenda:</strong></p>
+<ul>
+<li>M_ - signály pro DC motor driver</li>
+<li>D_ - signály pro displej</li>
+<li>LED_ - singály pro LED pásek</li>
+<li>A_ - signály pro akcelerometr</li>
+<li>B_ - singnály pro baterie</li>
+<li>ID_ - hardware identifikace</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../napajeni/" class="btn btn-neutral float-left" title="Napájení systému"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../main_board/main_board/" class="btn btn-neutral float-right" title="Main board">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/BrnoMarsRover/myMachine-LED-cap" class="fa fa-code-fork" style="color: #fcfcfc"> BrnoMarsRover/myMachine-LED-cap</a>
+        </span>
+    
+    
+      <span><a href="../napajeni/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../main_board/main_board/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

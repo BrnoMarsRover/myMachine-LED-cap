@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Big Picture - My Machine LED kšiltovka</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Big Picture";
+        var mkdocs_page_input_path = "big_picture.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> My Machine LED kšiltovka
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Big Picture</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Konstrukce</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../construction/komponenty/">Komponenty</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../construction/navody/">Návody</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hardware</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../hardware/zapojeni/">Architektura a zapojení</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hardware/napajeni/">Napájení systému</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hardware/pinout/">Pinout</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hardware/main_board/main_board/">Main board</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hardware/top_board/top_board/">Top board</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../software/example/">Motivace</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">My Machine LED kšiltovka</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Big Picture</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/BrnoMarsRover/myMachine-LED-cap/edit/main/docs/big_picture.md">Edit on BrnoMarsRover/myMachine-LED-cap</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="puvodni-myslenka">Původní myšlenka</h2>
+<p>Původní dětské zadání bylo vytvořit svítící LED tričko, které bude podle nálady měnit barvy. Navíc by na tričko mělo jít kreslit.</p>
+<h2 id="zadani">Zadání</h2>
+<p>Po realizačním návrhu a domluvě s komisí bylo novým cílem realizovat svítící kšiltovku (ideálně tři, pro každou třídu jednu), která:</p>
+<ul>
+<li>umí měnit barvy,</li>
+<li>se ovládá přes mobil (či jiné zařízení),</li>
+<li>má vrtulku poháněnou motorem,</li>
+<li>má displej pro zobrazení obrázků,</li>
+<li>má akcelerometr.</li>
+</ul>
+<h2 id="navrzene-reseni">Navržené řešení</h2>
+<p>Zakoupit jednoduchou kšiltovku, na kterou se přidělají navržené komponenty. Ideálně budou komponenty ke kšiltovce připevněny pomocí suchých zipů (viz seznam komponent), aby bylo možné vše jednoduše z kšiltovky odstranit a kšiltovku vyprat.</p>
+<p>Na kšiltovku se přidělají dvě navržené části:</p>
+<ul>
+<li><strong>Display box</strong> – box umístěný na čelní části kšiltovky. Bude obsahovat řídicí desku s mikrokontrolérem, vypínací tlačítko a baterii. Z čelní strany bude box zakryt displejem.</li>
+<li><strong>Top box</strong> – malý box umístěný v nejvyšším místě kšiltovky. Bude obsahovat malou DPS a motor pro vrtulku.</li>
+</ul>
+<p>Po celé kšiltovce bude rozveden LED pásek (viz foto). V místě top boxu bude LED pásek přerušen a zapojen do vyrobené DPS z důvodu lepšího křížení vodičů.</p>
+<p>Jako řídicí mikrokontrolér byl pro tento projekt vybrán <strong>ESP32</strong>, a to z důvodu podpory Wi-Fi. Konkrétně bude ESP32 fungovat jako webový server, ke kterému se bude možné připojit z libovolného zařízení (telefon, interaktivní tabule apod.). Přes webovou stránku bude možné kšiltovku ovládat.</p>
+<p>Minimální požadavky na ovládání přes webovou stránku:</p>
+<ul>
+<li>volba nálady (šťastný, smutný apod.),</li>
+<li>kreslení na displej,</li>
+<li>zobrazení stavu baterie.</li>
+</ul>
+<p>Obecně se po softwarové stránce projekt nebrání dalším rozšířením – několik řádků kódu navíc může výrazně zvýšit jeho atraktivitu. Lze například využít data z akcelerometru, ovládat otáčky vrtulky nebo zobrazovat obrázky na displeji. Možnosti jsou v podstatě neomezené.</p>
+<p>Mikrokontrolér bude dále obsluhovat veškeré periferie. Programování bude probíhat v prostředí Arduino IDE.</p>
+<p>Jak již bylo zmíněno, v obou boxech se bude nacházet DPS. V display boxu se bude nacházet hlavní řídicí deska, zatímco v top boxu menší DPS sloužící ke křížení LED pásku a uchycení motoru.</p>
+<p><img alt="Náhled modelu" src="../images/model_bigPicture.png" /></p>
+<h2 id="vyroba">Výroba</h2>
+<p>Jako první se vyrobí první kus kšiltovky, na kterém se odhalí všechny nedostatky. Jakmile bude tento kus otestovaný a plně funkční, může se souběžně vyvíjet software na již hotovém prototypu a zároveň vyrábět zbývající dvě kšiltovky (pokud na ně budou finance – měly by být).</p>
+<p>Navržené boxy se vytisknou na 3D tiskárně. Kompletní 3D modely jsou vedeny mimo GitHubový repozitář, a to ve sdíleném projektu přímo v <strong>Autodesk Fusion</strong>. Návrhy lze samozřejmě dále upravovat a v případě zájmu si může každý navrhnout i vlastní design.</p>
+<p>Desky plošných spojů jsou navrhovány v programu <strong>KiCad</strong>. Menší deska, která bude umístěna v top boxu, je již kompletně navržena. Původní myšlenka byla taková, aby ji bylo možné vyrobit na střední škole.</p>
+<p>Pro hlavní řídicí desku bylo navrženo schéma zapojení. Dále je otevřená otázka, zda si tuto desku bude chtít střední škola navrhnout sama. Schéma je k dispozici v GitHubovém repozitáři.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../construction/komponenty/" class="btn btn-neutral float-right" title="Komponenty">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/BrnoMarsRover/myMachine-LED-cap" class="fa fa-code-fork" style="color: #fcfcfc"> BrnoMarsRover/myMachine-LED-cap</a>
+        </span>
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../construction/komponenty/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
