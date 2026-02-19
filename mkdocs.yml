@@ -10,6 +10,7 @@ theme:
 
 nav:
   - Home: index.md
+  - Updates: updates.md
   - Big Picture: big_picture.md
   - Konstrukce:
       - Komponenty: construction/komponenty.md
