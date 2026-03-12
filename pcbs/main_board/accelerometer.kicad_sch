@@ -1299,7 +1299,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CRCW0603910KFKEAHP"
+		(property "Manufacturer Part Number" "CRCW060310K0FKEI"
 			(at 43.18 38.1 90)
 			(effects
 				(font
@@ -1317,7 +1317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "71-CRCW0603910KFKEAH"
+		(property "Supplier Part Number" "71-CRCW060310K0FKEI"
 			(at 43.18 38.1 90)
 			(effects
 				(font
@@ -1590,7 +1590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CRCW0603910KFKEAHP"
+		(property "Manufacturer Part Number" "CRCW060310K0FKEI"
 			(at 52.07 38.1 90)
 			(effects
 				(font
@@ -1608,7 +1608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "71-CRCW0603910KFKEAH"
+		(property "Supplier Part Number" "71-CRCW060310K0FKEI"
 			(at 52.07 38.1 90)
 			(effects
 				(font

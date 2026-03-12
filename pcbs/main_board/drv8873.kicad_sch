@@ -3279,7 +3279,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "603-CC603KRX7R9BB103"
+		(property "Supplier Part Number" "80-C0603C104M5R"
 			(at 138.43 46.99 0)
 			(effects
 				(font
@@ -4264,7 +4264,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CRCW0603910KFKEAHP"
+		(property "Manufacturer Part Number" "CRCW060310K0FKEI"
 			(at 118.11 62.23 90)
 			(effects
 				(font
@@ -4282,7 +4282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "71-CRCW0603910KFKEAH"
+		(property "Supplier Part Number" "71-CRCW060310K0FKEI"
 			(at 118.11 62.23 90)
 			(effects
 				(font
@@ -4379,7 +4379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "603-CC603KRX7R9BB103"
+		(property "Supplier Part Number" "80-C0603C104M5R"
 			(at 123.19 46.99 0)
 			(effects
 				(font
@@ -4587,7 +4587,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CRCW0603910KFKEAHP"
+		(property "Manufacturer Part Number" "CRCW060310K0FKEI"
 			(at 52.07 64.77 90)
 			(effects
 				(font
@@ -4605,7 +4605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "71-CRCW0603910KFKEAH"
+		(property "Supplier Part Number" "71-CRCW060310K0FKEI"
 			(at 52.07 64.77 90)
 			(effects
 				(font

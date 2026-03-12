@@ -13155,7 +13155,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CRCW0603910KFKEAHP"
+		(property "Manufacturer Part Number" "CRCW060310K0FKEI"
 			(at 161.29 30.48 90)
 			(effects
 				(font
@@ -13173,7 +13173,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "71-CRCW0603910KFKEAH"
+		(property "Supplier Part Number" "71-CRCW060310K0FKEI"
 			(at 161.29 30.48 90)
 			(effects
 				(font
@@ -13270,7 +13270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number" "603-CC603KRX7R9BB103"
+		(property "Supplier Part Number" "80-C0603C104M5R"
 			(at 182.88 50.8 0)
 			(effects
 				(font
