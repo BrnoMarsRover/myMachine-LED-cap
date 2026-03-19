@@ -34,7 +34,7 @@ void loop() {
       Serial.println("FAULT detected!");
       motor.resetFault();
     }
-    if (analogRead(EN) == 0) break; // You can also check currentDuty if exposed
+    break; // stop po prvnim cyklu rampy
     delay(10);
   }
 

@@ -15,7 +15,7 @@
 #include <Adafruit_NeoPixel.h>
 
 constexpr int LED_DATA_PIN = 4;
-constexpr int LED_COUNT    = 30;   // TODO: adjust to actual strip length
+constexpr int LED_COUNT    = 172;   // TODO: adjust to actual strip length
 
 class Led {
 public:
@@ -47,6 +47,20 @@ public:
         _strip.setBrightness(brightness);
         _strip.show();
     }
+
+    void show() {
+        _strip.show();
+    }
+
+    void fillRainbow(long firstHue, long hueStep) {
+        for (int i = 0; i < LED_COUNT; i++) {
+            uint32_t color = _strip.gamma32(_strip.ColorHSV(firstHue + i * hueStep));
+            _strip.setPixelColor(i, color);
+        }
+        _strip.show();
+    }
+
+    Adafruit_NeoPixel& strip() { return _strip; }
 
 private:
     Adafruit_NeoPixel _strip;
