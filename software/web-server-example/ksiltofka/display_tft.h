@@ -14,7 +14,7 @@ public:
   void handleDraw(const DrawMsg& m);
 
 private:
-  Adafruit_ST7796S tft = Adafruit_ST7796S(TFT_CS, TFT_DC, TFT_RST);
+  Adafruit_ST7796S tft = Adafruit_ST7796S(TFT_CS, TFT_DC, 19, 18, TFT_RST);
 
   bool penDown = false;
   int lastX = 0;

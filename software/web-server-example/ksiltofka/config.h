@@ -3,8 +3,8 @@
 
 // ===== TFT piny =====
 #define TFT_CS   5
-#define TFT_DC   2
-#define TFT_RST  4
+#define TFT_DC   14
+#define TFT_RST  33
 
 // Displej: 320x480 nativ, po rotation(1) = 480x320
 static const int DISP_W = 480;
