@@ -1,4 +1,4 @@
-#include "DisplayTFT.h"
+#include "include/DisplayTFT.h"
 
 bool DisplayTFT::begin() {
     SPI.begin(TFT_SCK, -1, TFT_MOSI, TFT_CS);

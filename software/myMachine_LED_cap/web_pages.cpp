@@ -1,4 +1,4 @@
-#include "web_pages.h"
+#include "include/web_pages.h"
 
 const char index_html[] PROGMEM = R"rawliteral(
 <!DOCTYPE html>
@@ -10,136 +10,199 @@ const char index_html[] PROGMEM = R"rawliteral(
 <title>myMachine LED Cap</title>
 
 <style>
+  *, *::before, *::after { box-sizing: border-box; }
   html, body {
     margin: 0; padding: 0; height: 100%;
-    background:#222; color:#fff;
-    font-family:sans-serif; text-align:center;
+    background: #222; color: #fff;
+    font-family: sans-serif; text-align: center;
     overflow: hidden;
     touch-action: none;
     -webkit-text-size-adjust: 100%;
   }
-  body { display:flex; flex-direction:column; min-height:100vh; }
-  #header { flex: 0 0 auto; padding: 6px 8px 0; }
-  h2 { margin: 6px 0 4px; }
-  p  { margin: 6px 0 0; font-size: 14px; color:#ddd; }
+  body { display: flex; flex-direction: column; }
+  button { -webkit-appearance: none; appearance: none; }
 
+  /* ── Tab bar ── */
+  #tabbar {
+    flex: 0 0 44px;
+    display: flex;
+    background: #1a1a1a;
+    border-bottom: 2px solid #444;
+  }
+  .tab {
+    flex: 1;
+    border: none; border-bottom: 3px solid transparent;
+    background: transparent; color: #777;
+    font-size: 13px; font-weight: bold; letter-spacing: 0.5px;
+    cursor: pointer; padding: 0;
+    transition: color 0.15s;
+  }
+  .tab.active { color: #fff; border-bottom-color: #fff; }
+
+  /* ── Tab contents ── */
+  .tab-content { display: none; flex: 1; overflow: hidden; }
+  .tab-content.active { display: flex; flex-direction: column; }
+
+  /* ── Drawing tab ── */
   #wrapper {
-    flex: 1 1 auto; min-height: 0;
-    display:flex; justify-content:center; align-items:center;
-    gap:10px; padding: 8px; box-sizing: border-box;
+    flex: 1; min-height: 0;
+    display: flex; justify-content: center; align-items: center;
+    gap: 10px; padding: 8px;
     max-width: 100vw; flex-direction: column;
   }
-  #canvas { background:#fff; border:1px solid #555; touch-action:none; display:block; }
+  #canvas { background: #fff; border: 1px solid #555; touch-action: none; display: block; }
 
   #toolbar {
-    display:flex; flex-direction: row; flex-wrap: wrap;
-    gap:6px; justify-content:center; align-items:center;
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    gap: 6px; justify-content: center; align-items: center;
     width: 100%; max-width: 720px;
   }
 
   .colorBtn {
-    width:36px; height:36px; border-radius:50%;
-    border:2px solid #444; padding:0; cursor:pointer;
+    width: 36px; height: 36px; border-radius: 50%;
+    border: 2px solid #444; padding: 0; cursor: pointer;
   }
-  .colorBtn.active { border-color:#fff; box-shadow:0 0 5px #fff; }
+  .colorBtn.active { border-color: #fff; box-shadow: 0 0 5px #fff; }
 
-  .sizeRow { display:flex; gap:6px; justify-content:center; align-items:center; width: 100%; }
+  .sizeRow { display: flex; gap: 6px; justify-content: center; align-items: center; width: 100%; }
 
   .sizeBtn {
-    width:36px; height:32px; border-radius:10px;
-    border:2px solid #444; background:#333; color:#fff; cursor:pointer;
+    width: 36px; height: 32px; border-radius: 10px;
+    border: 2px solid #444; background: #333; color: #fff; cursor: pointer;
   }
-  .sizeBtn.active { border-color:#fff; box-shadow:0 0 5px #fff; }
+  .sizeBtn.active { border-color: #fff; box-shadow: 0 0 5px #fff; }
 
-  #sizeValue { color:#fff; font-weight:bold; text-align:center; min-width:32px; line-height:32px; }
-  #clearBtn  { margin-top:6px; padding:6px 10px; cursor:pointer; }
+  #sizeValue { color: #fff; font-weight: bold; text-align: center; min-width: 32px; line-height: 32px; }
+  #clearBtn  { margin-top: 6px; padding: 6px 10px; cursor: pointer; }
 
-  /* ── Přepínač módů ── */
-  .modeSection { margin-top:10px; width:100%; }
-  .modeLabel   { color:#aaa; font-size:11px; margin-bottom:4px; text-transform:uppercase; }
-  .modeRow     { display:flex; gap:6px; justify-content:center; flex-wrap:wrap; }
-  .modeBtn {
-    padding:6px 10px; border-radius:8px;
-    border:2px solid #444; background:#333; color:#fff;
-    cursor:pointer; font-size:12px; font-weight:bold;
-    -webkit-appearance:none; appearance:none;
+  /* ── Mood selector ── */
+  #moodRow {
+    display: flex; align-items: center; justify-content: center;
+    gap: 6px; width: 100%; margin-top: 8px;
+    border-top: 1px solid #444; padding-top: 8px;
   }
-  .modeBtn.active { border-color:#fff; background:#555; box-shadow:0 0 6px #fff; }
+  .moodArrow {
+    width: 32px; height: 32px; border-radius: 8px;
+    border: 2px solid #444; background: #333; color: #fff;
+    cursor: pointer; font-size: 16px; padding: 0; line-height: 28px;
+  }
+  #moodDot {
+    width: 22px; height: 22px; border-radius: 50%;
+    border: 2px solid #666; flex-shrink: 0;
+  }
+  #moodName { font-size: 12px; min-width: 82px; text-align: center; }
 
+  /* ── Battery indicator ── */
+  #battIndicator {
+    flex: 0 0 auto;
+    display: flex; align-items: center;
+    padding: 0 10px;
+    font-size: 12px; color: #aaa;
+    white-space: nowrap; gap: 4px;
+  }
+  #battIndicator.low { color: #ff4444; }
+
+  /* ── SOS / Blinkr placeholder tabs ── */
+  .empty-tab {
+    flex: 1; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 12px;
+  }
+  .empty-tab .icon { font-size: 52px; }
+  .empty-tab .title { font-size: 20px; font-weight: bold; }
+  .empty-tab .sub   { font-size: 13px; color: #aaa; }
+
+  /* ── Landscape ── */
   @media (orientation: landscape) {
     #wrapper { flex-direction: row; align-items: stretch; width: 100%; }
     #canvas  { flex: 1 1 auto; }
     #toolbar {
       flex: 0 0 190px; width: 190px; max-width: 190px;
-      flex-direction: column; flex-wrap: nowrap; align-items:center;
+      flex-direction: column; flex-wrap: nowrap; align-items: center;
       max-height: 100%; overflow-y: auto;
       -webkit-overflow-scrolling: touch;
-      padding-bottom: 8px; box-sizing: border-box;
+      padding-bottom: 8px;
     }
     .sizeRow  { width: auto; }
-    #header   { padding: 2px 8px 0; }
-    h2        { margin: 2px 0 2px; font-size: 22px; }
-    #header p { display: none; }
     #wrapper  { padding: 4px 6px; gap: 8px; }
-    .colorBtn { width: 38px; height: 38px; border-radius: 50%; }
+    .colorBtn { width: 38px; height: 38px; }
     .sizeBtn  { height: 34px; line-height: 34px; }
-    .modeRow  { flex-direction: column; align-items: stretch; }
-    .modeBtn  { width: 100%; }
+    #moodRow  { flex-direction: row; }
   }
-  @media (max-width: 420px){ .colorBtn { width:32px; height:32px; } }
+  @media (max-width: 420px){ .colorBtn { width: 32px; height: 32px; } }
   @media (orientation: landscape) and (max-height: 390px){
-    h2 { font-size: 18px; }
     #toolbar { flex: 0 0 170px; width: 170px; max-width: 170px; }
-    .colorBtn{ width: 34px; height: 34px; }
-    .sizeBtn { height: 32px; line-height: 32px; }
+    .colorBtn { width: 34px; height: 34px; }
+    .sizeBtn  { height: 32px; line-height: 32px; }
   }
-  button { -webkit-appearance: none; appearance: none; }
   #toolbar, #toolbar * { flex-shrink: 0; }
 </style>
 </head>
 
 <body>
-<div id="header">
-  <h2>myMachine LED Cap</h2>
-  <p>Kresli prstem nebo myší.</p>
+
+<!-- Tab bar -->
+<div id="tabbar">
+  <button class="tab active" id="tab-drawing" onclick="switchTab('drawing')">KRESLENÍ</button>
+  <button class="tab"        id="tab-sos"     onclick="switchTab('sos')">SOS</button>
+  <button class="tab"        id="tab-blinkr"  onclick="switchTab('blinkr')">BLINKR</button>
+  <div id="battIndicator"><span id="battPct">--</span>%</div>
 </div>
 
-<div id="wrapper">
-  <canvas id="canvas"></canvas>
+<!-- Kreslení -->
+<div id="tab-content-drawing" class="tab-content active">
+  <div id="wrapper">
+    <canvas id="canvas"></canvas>
 
-  <div id="toolbar">
-    <!-- Barvy -->
-    <button class="colorBtn active" data-color="#00ff00" style="background:#00ff00;"></button>
-    <button class="colorBtn" data-color="#ff0000" style="background:#ff0000;"></button>
-    <button class="colorBtn" data-color="#0000ff" style="background:#0000ff;"></button>
-    <button class="colorBtn" data-color="#ffff00" style="background:#ffff00;"></button>
-    <button class="colorBtn" data-color="#000000" style="background:#000000;"></button>
-    <button class="colorBtn" data-color="#ff00ff" style="background:#ff00ff;"></button>
-    <button class="colorBtn" data-color="#ff8800" style="background:#ff8800;"></button>
+    <div id="toolbar">
+      <!-- Barvy -->
+      <button class="colorBtn active" data-color="#00ff00" style="background:#00ff00;"></button>
+      <button class="colorBtn" data-color="#ff0000" style="background:#ff0000;"></button>
+      <button class="colorBtn" data-color="#0000ff" style="background:#0000ff;"></button>
+      <button class="colorBtn" data-color="#ffff00" style="background:#ffff00;"></button>
+      <button class="colorBtn" data-color="#000000" style="background:#000000;"></button>
+      <button class="colorBtn" data-color="#ff00ff" style="background:#ff00ff;"></button>
+      <button class="colorBtn" data-color="#ff8800" style="background:#ff8800;"></button>
 
-    <!-- Nástroje -->
-    <button class="sizeBtn active" id="penBtn"    style="margin-top:6px; width:auto;">PERO</button>
-    <button class="sizeBtn"        id="eraserBtn" style="width:auto;">GUMA</button>
+      <!-- Nástroje -->
+      <button class="sizeBtn active" id="penBtn"    style="margin-top:6px; width:auto;">PERO</button>
+      <button class="sizeBtn"        id="eraserBtn" style="width:auto;">GUMA</button>
 
-    <!-- Tloušťka -->
-    <div class="sizeRow" style="margin-top:6px;">
-      <button class="sizeBtn" id="sizeMinus">−</button>
-      <div id="sizeValue">2</div>
-      <button class="sizeBtn" id="sizePlus">+</button>
-    </div>
-    <button class="sizeBtn active" id="sizeReset" style="margin-top:4px; width:auto;">RESET</button>
+      <!-- Tloušťka -->
+      <div class="sizeRow" style="margin-top:6px;">
+        <button class="sizeBtn" id="sizeMinus">−</button>
+        <div id="sizeValue">2</div>
+        <button class="sizeBtn" id="sizePlus">+</button>
+      </div>
+      <button class="sizeBtn active" id="sizeReset" style="margin-top:4px; width:auto;">RESET</button>
 
-    <button id="clearBtn">Vymazat</button>
+      <button id="clearBtn">Vymazat</button>
 
-    <!-- Mody -->
-    <div class="modeSection">
-      <div class="modeLabel">Mód</div>
-      <div class="modeRow">
-        <button class="modeBtn active" id="modeDrawing" onclick="setMode('drawing')">KRESLENI</button>
-        <button class="modeBtn"        id="modePolice"  onclick="setMode('police')">POLICIE</button>
-        <button class="modeBtn"        id="modeAccel"   onclick="setMode('accel')">ACCEL</button>
+      <!-- Nálada -->
+      <div id="moodRow">
+        <button class="moodArrow" onclick="prevMood()">&#9664;</button>
+        <div id="moodDot"></div>
+        <span id="moodName"></span>
+        <button class="moodArrow" onclick="nextMood()">&#9654;</button>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- SOS -->
+<div id="tab-content-sos" class="tab-content">
+  <div class="empty-tab">
+    <div class="icon">&#128680;</div>
+    <div class="title">SOS</div>
+    <div class="sub">LED pásek bliká modro&#8209;červeně</div>
+  </div>
+</div>
+
+<!-- Blinkr -->
+<div id="tab-content-blinkr" class="tab-content">
+  <div class="empty-tab">
+    <div class="icon">&#128661;</div>
+    <div class="title">Blinkr</div>
+    <div class="sub">Nakloň čepici pro aktivaci blinkru</div>
   </div>
 </div>
 
@@ -154,6 +217,54 @@ const char index_html[] PROGMEM = R"rawliteral(
   document.addEventListener('gestureend',    e => e.preventDefault(), {passive:false});
   document.addEventListener('wheel', e => { if (e.ctrlKey) e.preventDefault(); }, {passive:false});
 
+  // ── Baterie ──────────────────────────────────────────────────
+  function updateBattery() {
+    fetch('/battery').then(r => r.text()).then(pct => {
+      const n = parseInt(pct, 10);
+      document.getElementById('battPct').textContent = n;
+      const el = document.getElementById('battIndicator');
+      el.classList.toggle('low', n < 20);
+    }).catch(() => {});
+  }
+  updateBattery();
+  setInterval(updateBattery, 30000);
+
+  // ── Záložky ──────────────────────────────────────────────────
+  function switchTab(mode) {
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-content-' + mode).classList.add('active');
+    document.getElementById('tab-' + mode).classList.add('active');
+    fetch('/mode', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:'mode='+mode}).catch(()=>{});
+    if (mode === 'drawing') setTimeout(setupCanvas, 50);
+  }
+
+  // ── Nálady ───────────────────────────────────────────────────
+  const MOODS = [
+    {name: "Smutný",     color: "#0000ff"},
+    {name: "Veselý",     color: "#ffff00"},
+    {name: "Naštvaný",   color: "#ff0000"},
+    {name: "Překvapený", color: "#ff8800"},
+    {name: "Vyděšený",   color: "#00ff00"},
+    {name: "Nadšený",    color: "#aa00ff"},
+  ];
+  let currentMood = 0;
+
+  function updateMoodUI() {
+    document.getElementById('moodDot').style.background  = MOODS[currentMood].color;
+    document.getElementById('moodDot').style.borderColor = MOODS[currentMood].color;
+    document.getElementById('moodName').textContent = MOODS[currentMood].name;
+  }
+  function setMood(i) {
+    currentMood = i;
+    updateMoodUI();
+    fetch('/mood', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:'mood='+i}).catch(()=>{});
+  }
+  function prevMood() { setMood((currentMood + MOODS.length - 1) % MOODS.length); }
+  function nextMood() { setMood((currentMood + 1) % MOODS.length); }
+  updateMoodUI();
+
+  // ── Canvas ───────────────────────────────────────────────────
   const canvas  = document.getElementById('canvas');
   const ctx     = canvas.getContext('2d');
   const toolbar = document.getElementById('toolbar');
@@ -199,6 +310,7 @@ const char index_html[] PROGMEM = R"rawliteral(
     currentDpr = window.devicePixelRatio || 1;
     const wrapRect = wrapper.getBoundingClientRect();
     const tbRect   = toolbar.getBoundingClientRect();
+    if (wrapRect.width === 0) return;
     const gap = 10, padding = 16;
     const isPortrait = wrapRect.height >= wrapRect.width;
     let availW = isPortrait ? wrapRect.width - padding : wrapRect.width - tbRect.width - gap - padding;
@@ -221,7 +333,7 @@ const char index_html[] PROGMEM = R"rawliteral(
   if (window.visualViewport) window.visualViewport.addEventListener('resize', scheduleResize);
   window.addEventListener('orientationchange', scheduleResize);
 
-  // UI barvy
+  // Barvy
   document.querySelectorAll('.colorBtn').forEach(btn => {
     btn.addEventListener('click', () => {
       currentColor = btn.dataset.color;
@@ -230,7 +342,7 @@ const char index_html[] PROGMEM = R"rawliteral(
     });
   });
 
-  // UI tloušťka
+  // Tloušťka
   const sizeValueEl = document.getElementById('sizeValue');
   function updatePenSize(s){ penSize = Math.max(MIN_PEN_SIZE, Math.min(MAX_PEN_SIZE, s)); sizeValueEl.textContent = penSize; }
   document.getElementById('sizeMinus').addEventListener('click', () => updatePenSize(penSize-1));
@@ -238,23 +350,11 @@ const char index_html[] PROGMEM = R"rawliteral(
   document.getElementById('sizeReset').addEventListener('click', () => updatePenSize(DEFAULT_PEN_SIZE));
   updatePenSize(DEFAULT_PEN_SIZE);
 
-  // UI nástroj
+  // Nástroj
   function setTool(t){ tool=t; document.getElementById('penBtn').classList.toggle('active',t==='pen'); document.getElementById('eraserBtn').classList.toggle('active',t==='eraser'); }
   document.getElementById('penBtn')   .addEventListener('click', ()=>setTool('pen'));
   document.getElementById('eraserBtn').addEventListener('click', ()=>setTool('eraser'));
   function getDrawColor(){ return (tool==='eraser') ? '#ffffff' : currentColor; }
-
-  // Přepínání módů
-  function setMode(mode) {
-    fetch('/mode', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:'mode='+mode})
-      .then(() => {
-        document.querySelectorAll('.modeBtn').forEach(b => b.classList.remove('active'));
-        const id = 'mode' + mode.charAt(0).toUpperCase() + mode.slice(1);
-        const el = document.getElementById(id);
-        if (el) el.classList.add('active');
-      })
-      .catch(() => {});
-  }
 
   // WS
   let socket;

@@ -1,5 +1,5 @@
-#include "WebUI.h"
-#include "web_pages.h"
+#include "include/WebUI.h"
+#include "include/web_pages.h"
 
 void WebUI::begin(const char* ssid, DrawMsgCallback cb) {
     onDraw = cb;
@@ -25,9 +25,30 @@ void WebUI::begin(const char* ssid, DrawMsgCallback cb) {
         if (req->hasParam("mode", true)) {
             String m = req->getParam("mode", true)->value();
             if      (m == "drawing") g_mode = AppMode::DRAWING;
-            else if (m == "police")  g_mode = AppMode::POLICE;
-            else if (m == "accel")   g_mode = AppMode::ACCEL;
+            else if (m == "sos")     g_mode = AppMode::SOS;
+            else if (m == "blinkr")  g_mode = AppMode::BLINKR;
             Serial.printf("Mode: %s\n", m.c_str());
+        }
+        req->send(200, "text/plain", "OK");
+    });
+
+    // Stav baterie
+    server.on("/battery", HTTP_GET, [](AsyncWebServerRequest* req) {
+        int raw = analogRead(PIN_B_STATUS);
+        int pct = (int)((float)(raw - BATT_RAW_MIN) / (BATT_RAW_MAX - BATT_RAW_MIN) * 100.0f);
+        if (pct < 0)   pct = 0;
+        if (pct > 100) pct = 100;
+        req->send(200, "text/plain", String(pct));
+    });
+
+    // Přepínání nálad (DRAWING mód)
+    server.on("/mood", HTTP_POST, [](AsyncWebServerRequest* req) {
+        if (req->hasParam("mood", true)) {
+            int m = req->getParam("mood", true)->value().toInt();
+            if (m >= 0 && m < (int)Mood::MOOD_COUNT) {
+                g_mood = (Mood)m;
+                Serial.printf("Mood: %d\n", m);
+            }
         }
         req->send(200, "text/plain", "OK");
     });
