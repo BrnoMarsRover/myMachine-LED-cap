@@ -4,6 +4,10 @@
 
 [Otevřít interaktivní BOM](ibom.html)
 
+Zatím osazujte dle tohoto:
+
+[BOM k osazení](ibom2.html)
+
 ## Schéma
 
 [Otevřít schéma](schematic_v0.0.pdf)
@@ -14,7 +18,7 @@
 
 - Nefunkční ochrana proti přepólování pomocí "smart diode controller". Problém se vyřeší klasickými schottkeyho diodami, které mají sice vyšší úbytek napětí, ale nakonec proud, který z baterek teče není tak vysoký, takže ho dioda zvládne.
 
-- Nefunkční odpojení napájení ESP po připojení USB. Při stavu, kdy do ESP není připojeno USB je i tak na pinu 5V Vcc napětí 3V3. Problém se vyřeší prostým neosazením součástky TPS22917LDBV. 
+- Nefunkční odpojení napájení ESP po připojení USB. Při stavu, kdy do ESP není připojeno USB je i tak na pinu 5V Vcc napětí 3V3. Problém se vyřeší proškrábáním cesty. 
 
 - Špatný footprint pro modul step-up. Při otočení a převrácení ho lze osadit.
 
