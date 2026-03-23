@@ -1,5 +1,7 @@
 ## Druhý nákup – LaskaKit
 
+> **Doručit: střední škola**
+
 Položky z obchodu [LaskaKit.cz](https://www.laskakit.cz) potřebné pro realizaci jedné LED kšiltovky.
 
 ## Tabulka komponent
@@ -20,6 +22,8 @@ Položky z obchodu [LaskaKit.cz](https://www.laskakit.cz) potřebné pro realiza
 
 ## 3market.cz
 
+> **Doručit: střední škola**
+
 | Název | Množství | Cena (bm) | Cena celkem | Kód |
 |-------|----------|-----------|-------------|-----|
 |[Dual-Lock zip](https://www.3market.cz/sj-3870-samolepici-suchy-zip-3m-dual-lock--lepeni-kovu--povrchu-s-praskovymi-laky--plastu-typu-plexiskla--polykarbonatu-a-abs--cena-za-bezny-metr--exterier-a-interier/)|4 m|108,4 Kč|433,6 Kč|7100214419|
@@ -29,6 +33,8 @@ Položky z obchodu [LaskaKit.cz](https://www.laskakit.cz) potřebné pro realiza
 ---
 
 ## feromat.cz
+
+> **Doručit: tým VUT**
 
 | Název | Množství | Cena (ks) | Cena celkem | Poznámka |
 |-------|----------|-----------|-------------|----------|
@@ -45,5 +51,7 @@ Položky z obchodu [LaskaKit.cz](https://www.laskakit.cz) potřebné pro realiza
 ---
 
 ## Nákupní košík – Mouser
+
+> **Doručit: tým VUT**
 
 [Otevřít sdílený košík na Mouser.com](https://cz.mouser.com/api/CrossDomain/GetContext?syncDomains=www&returnUrl=https%3a%2f%2fwww.mouser.com%2fTools%2fProject%2fShare%3fAccessID%3dd4a30905e0&async=False&setPrefSub=False&clearPrefSub=False)
