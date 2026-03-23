@@ -28,6 +28,22 @@ Položky z obchodu [LaskaKit.cz](https://www.laskakit.cz) potřebné pro realiza
 
 ---
 
+## feromat.cz
+
+| Název | Množství | Cena (ks) | Cena celkem | Poznámka |
+|-------|----------|-----------|-------------|----------|
+|Tavný závit M3 vysoký 3mm|40|-|-|Display box|
+|[Šroub M3 14mm](https://shop.feromat.cz/index.php?IdP=18&Akce=Obj&Hodnota=15000000035643&IdVyhlSloz=15000000039723)|20|-|-|Display box|
+|Distanční sloupek samice M3 8mm|20|-|-|Display box|
+|Šroub M3 6mm zapuštěný|10|-|-|Display box – Zdebjan řekne|
+|[Matka M3](https://shop.feromat.cz/index.php?IdP=18&Akce=Obj&Hodnota=15000000034929&IdVyhlSloz=15000000908352)|10|-|-|Display box|
+|[Šroub M3 6mm](https://shop.feromat.cz/index.php?IdP=18&Akce=Obj&Hodnota=15000000036193&IdVyhlSloz=15000000039723)|20|-|-|Display box|
+|[Šroub M3 14mm](https://shop.feromat.cz/index.php?IdP=18&Akce=Obj&Hodnota=15000000035643&IdVyhlSloz=15000000039723)|15|-|-|Top box|
+|[Matka M3](https://shop.feromat.cz/index.php?IdP=18&Akce=Obj&Hodnota=15000000034929&IdVyhlSloz=15000000908352)|15|-|-|Top box|
+|[Podložka M3](https://shop.feromat.cz/index.php?IdP=18&Akce=Obj&Hodnota=15000000035422&IdVyhlSloz=15000000035418)|15|-|-|Top box|
+
+---
+
 ## Nákupní košík – Mouser
 
 [Otevřít sdílený košík na Mouser.com](https://cz.mouser.com/api/CrossDomain/GetContext?syncDomains=www&returnUrl=https%3a%2f%2fwww.mouser.com%2fTools%2fProject%2fShare%3fAccessID%3dd4a30905e0&async=False&setPrefSub=False&clearPrefSub=False)
