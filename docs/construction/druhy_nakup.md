@@ -38,9 +38,9 @@ Položky z obchodu [LaskaKit.cz](https://www.laskakit.cz) potřebné pro realiza
 
 | Název | Množství | Cena (ks) | Cena celkem | Poznámka |
 |-------|----------|-----------|-------------|----------|
-|Tavný závit M3 vysoký 3mm|40|-|-|Display box|
+|[Tavný závit M3 vysoký 3mm](https://www.tme.eu/cz/details/kvt-0006m3/zavitove-vlozky/tappex/0006m3/)|40|-|-|Display box|
 |[Šroub M3 14mm](https://shop.feromat.cz/index.php?IdP=18&Akce=Obj&Hodnota=15000000035643&IdVyhlSloz=15000000039723)|20|-|-|Display box|
-|Distanční sloupek samice M3 8mm|20|-|-|Display box|
+|[Distanční sloupek samice M3 8mm](https://www.tme.eu/cz/details/tff-m3x8_dr113bk/distancni-prvky-kovove/dremec/113x08sw/)|20|-|-|Display box|
 |[Šroub M3 6mm zapuštěný](https://shop.feromat.cz/index.php?IdP=18&Akce=Obj&Hodnota=15000000039581&IdVyhlSloz=15000000227729)|10|-|-|Display box – Zdebjan řekne|
 |[Matka M3](https://shop.feromat.cz/index.php?IdP=18&Akce=Obj&Hodnota=15000000034929&IdVyhlSloz=15000000908352)|10|-|-|Display box|
 |[Šroub M3 6mm](https://shop.feromat.cz/index.php?IdP=18&Akce=Obj&Hodnota=15000000036193&IdVyhlSloz=15000000039723)|20|-|-|Display box|
