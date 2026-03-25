@@ -23,10 +23,11 @@
 // Kalibruj tyto hodnoty podle skutečného měření ADC
 #define BATT_RAW_MAX          3900   // ADC raw @ ~4.2 V (100 %)
 #define BATT_RAW_MIN          3100   // ADC raw @ ~3.3 V (  0 %)
-#define BATT_CHECK_INTERVAL_MS 30000 // kontrola každých 30 s
+#define BATT_SAMPLE_INTERVAL_MS 1000  // vzorkování ADC každou 1 s (EMA)
+#define BATT_CHECK_INTERVAL_MS  30000 // ochranný check + web update každých 30 s
 #define BATT_SLEEP_RECHECK_US  60000000ULL // po 60 s znovu zkontroluj
 
 // ── Blinkr – kalibrace osy akcelerometru ─────────────────────
 #define TILT_THRESHOLD  2.0f  // m/s² – minimální akcelerace pro detekci
 #define TILT_INVERT_X   0     // 1 = prohoď LEFT ↔ RIGHT
-#define TILT_INVERT_Y   0     // 1 = invertuj osu Y (FRONT)
+#define TILT_INVERT_Y   1     // 1 = invertuj osu Y (FRONT)

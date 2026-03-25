@@ -34,8 +34,7 @@ void WebUI::begin(const char* ssid, DrawMsgCallback cb) {
 
     // Stav baterie
     server.on("/battery", HTTP_GET, [](AsyncWebServerRequest* req) {
-        int raw = analogRead(PIN_B_STATUS);
-        int pct = (int)((float)(raw - BATT_RAW_MIN) / (BATT_RAW_MAX - BATT_RAW_MIN) * 100.0f);
+        int pct = (int)((g_battFiltered - BATT_RAW_MIN) / (float)(BATT_RAW_MAX - BATT_RAW_MIN) * 100.0f);
         if (pct < 0)   pct = 0;
         if (pct > 100) pct = 100;
         req->send(200, "text/plain", String(pct));

@@ -68,21 +68,42 @@ void initPins() {
 }
 
 // ── Baterie ───────────────────────────────────────────────────
-uint32_t _battCheckTimer = 0;
+float    g_battFiltered   = 0.0f;  // EMA filtrovaná ADC hodnota
+uint32_t _battSampleTimer = 0;     // timer vzorkování (1 s)
+uint32_t _battCheckTimer  = 0;     // timer ochranného checku (30 s)
+
+// Naprimuje EMA filtr průměrem z N vzorků
+void primeBattFilter(int samples = 10) {
+    long sum = 0;
+    for (int i = 0; i < samples; i++) {
+        sum += analogRead(PIN_B_STATUS);
+        delay(5);
+    }
+    g_battFiltered = (float)(sum / samples);
+}
 
 void checkBattery() {
-    if (millis() - _battCheckTimer < BATT_CHECK_INTERVAL_MS) return;
-    _battCheckTimer = millis();
+    uint32_t now = millis();
 
-    int raw = analogRead(PIN_B_STATUS);
-    Serial.printf("Battery raw: %d\n", raw);
+    // Vzorkování každou 1 s – aktualizuj EMA filtr
+    if (now - _battSampleTimer >= BATT_SAMPLE_INTERVAL_MS) {
+        _battSampleTimer = now;
+        int raw = analogRead(PIN_B_STATUS);
+        // EMA: alpha = 0.1 (delší časová konstanta díky hustšímu vzorkování)
+        g_battFiltered = 0.1f * raw + 0.9f * g_battFiltered;
+        Serial.printf("Battery raw: %d  filtered: %.0f\n", raw, g_battFiltered);
+    }
 
-    if (raw < BATT_RAW_MIN) {
-        Serial.println("Battery low! Entering deep sleep.");
-        leds.clearAll();
-        display.clear(ST77XX_BLACK);
-        esp_sleep_enable_timer_wakeup(BATT_SLEEP_RECHECK_US);
-        esp_deep_sleep_start();
+    // Ochranný check každých 30 s
+    if (now - _battCheckTimer >= BATT_CHECK_INTERVAL_MS) {
+        _battCheckTimer = now;
+        if (g_battFiltered < BATT_RAW_MIN) {
+            Serial.println("Battery low! Entering deep sleep.");
+            leds.clearAll();
+            display.clear(ST77XX_BLACK);
+            esp_sleep_enable_timer_wakeup(BATT_SLEEP_RECHECK_US);
+            esp_deep_sleep_start();
+        }
     }
 }
 
@@ -100,6 +121,9 @@ void setup() {
         esp_sleep_enable_timer_wakeup(BATT_SLEEP_RECHECK_US);
         esp_deep_sleep_start();
     }
+
+    // Naprimuj EMA filtr (10 vzorků = ustálená počáteční hodnota)
+    primeBattFilter();
 
     // HW ID → SSID
     uint8_t hwId = readHwId();

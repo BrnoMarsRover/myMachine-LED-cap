@@ -19,3 +19,4 @@ enum class Mood : uint8_t {
 
 extern AppMode g_mode;
 extern Mood    g_mood;
+extern float   g_battFiltered;  // filtrovaná ADC hodnota baterie (EMA)
