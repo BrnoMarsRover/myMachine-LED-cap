@@ -1,0 +1,17 @@
+X	Y	Z
+
+ROVNĚ:
+10	0	-2
+
+NÁKLON:
+dopredu:
+9	0	4
+
+dozadu:
+4	0	-9
+
+doleva:
+8	-6	-1
+
+doprava:
+8	6	-1
