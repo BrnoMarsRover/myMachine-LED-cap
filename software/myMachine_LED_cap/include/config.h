@@ -28,6 +28,6 @@
 #define BATT_SLEEP_RECHECK_US  60000000ULL // po 60 s znovu zkontroluj
 
 // ── Blinkr – kalibrace osy akcelerometru ─────────────────────
-#define TILT_THRESHOLD  2.0f  // m/s² – minimální akcelerace pro detekci
-#define TILT_INVERT_X   0     // 1 = prohoď LEFT ↔ RIGHT
-#define TILT_INVERT_Y   1     // 1 = invertuj osu Y (FRONT)
+// Naměřená orientace: gravitace na X, boční náklon = Y, doprodu = Z
+#define TILT_THRESHOLD  2.0f  // m/s² – minimální akcelerace pro detekci náklonu
+#define TILT_INVERT_Y   0     // 1 = prohoď LEFT ↔ RIGHT (pokud jsou strany prohozené)

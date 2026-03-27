@@ -17,6 +17,7 @@ Nainstaluj přes **Arduino IDE → Tools → Manage Libraries**:
 | `Adafruit NeoPixel` | Adafruit | LED pásek WS2812B |
 | `AsyncTCP` | ESP32-focusight | WebSocket server (ZIP z GitHubu) |
 | `ESPAsyncWebServer` | ESP32-focusight | WebSocket server (ZIP z GitHubu) |
+| `Adafruit BusIO` | Adafruit | Závislost SPI/I2C Adafruit knihoven |
 
 ---
 
@@ -83,3 +84,5 @@ myMachine_LED_cap/
 - Měření napětí baterie s deep sleep pod `BATT_RAW_MIN`, probuzení po 60 s
 - Kalibrace os akcelerometru přes `TILT_INVERT_X/Y` v `config.h`
 - Přejmenování módů: POLICE → SOS, ACCEL → BLINKR
+
+

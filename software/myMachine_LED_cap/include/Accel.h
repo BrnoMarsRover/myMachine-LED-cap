@@ -36,25 +36,26 @@ public:
     float getY() const { return _ay; }
     float getZ() const { return _az; }
 
-    // Úhel náklonu v stupních (0 = rovně, 90 = na boku)
+    // Úhel náklonu od rovné polohy v stupních (0 = rovně)
+    // Naměřeno: v klidu X≈10 (gravitace), Y≈0, Z≈-2
+    // Boční tilt (L/R) odpovídá odchylce osy Y od nuly
     float getTiltAngle() const {
-        float horiz = sqrt(_ax * _ax + _ay * _ay);
-        return degrees(atan2(horiz, abs(_az)));
+        return degrees(atan2(abs(_ay), abs(_ax)));
     }
 
-    // Dominantní směr náklonu – kalibrace přes TILT_INVERT_X/Y v config.h
+    // Dominantní směr náklonu podle naměřené orientace senzoru:
+    //   doleva  = Y záporná,  doprava = Y kladná
+    //   dopredu = Z kladná (z klidové hodnoty -2 se zvýší na +4)
+    // Kalibrace přes TILT_INVERT_Y v config.h
     TiltDir getTiltDir() const {
-        float absX = abs(_ax);
-        float absY = abs(_ay);
-        if (absX < TILT_THRESHOLD && absY < TILT_THRESHOLD) return TiltDir::NONE;
-        if (absX >= absY) {
-            bool goRight = (_ax > 0);
-            if (TILT_INVERT_X) goRight = !goRight;
-            return goRight ? TiltDir::RIGHT : TiltDir::LEFT;
+        float ay = TILT_INVERT_Y ? -_ay : _ay;
+        if (abs(ay) > TILT_THRESHOLD) {
+            return (ay > 0) ? TiltDir::RIGHT : TiltDir::LEFT;
         }
-        bool goFront = (_ay > 0);
-        if (TILT_INVERT_Y) goFront = !goFront;
-        return goFront ? TiltDir::FRONT : TiltDir::NONE;
+        if (_az > TILT_THRESHOLD) {
+            return TiltDir::FRONT;
+        }
+        return TiltDir::NONE;
     }
 
     // Výkon motoru 0–100 podle náklonu

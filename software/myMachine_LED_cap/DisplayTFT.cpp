@@ -53,6 +53,57 @@ void DisplayTFT::drawThickLine(int x0, int y0, int x1, int y1, uint16_t color, i
     }
 }
 
+void DisplayTFT::showConnectInfo(const char* ssid, const char* pass, const char* ip) {
+    tft.fillScreen(ST77XX_BLACK);
+
+    // Nadpis
+    tft.setTextColor(ST77XX_WHITE);
+    tft.setTextSize(3);
+    tft.setCursor(10, 12);
+    tft.print("Pripojte se:");
+
+    // WiFi SSID
+    tft.setTextColor(0x07FF);  // cyan
+    tft.setTextSize(2);
+    tft.setCursor(10, 60);
+    tft.print("WiFi: ");
+    tft.setTextSize(3);
+    tft.setCursor(10, 82);
+    tft.print(ssid);
+
+    // Heslo
+    tft.setTextColor(ST77XX_WHITE);
+    tft.setTextSize(2);
+    tft.setCursor(10, 130);
+    tft.print("Heslo: ");
+    tft.setTextColor(0x07FF);
+    tft.setTextSize(3);
+    tft.setCursor(10, 152);
+    tft.print(pass);
+
+    // URL
+    tft.setTextColor(ST77XX_WHITE);
+    tft.setTextSize(2);
+    tft.setCursor(10, 205);
+    tft.print("Webovy prohlizec:");
+    tft.setTextColor(0x07FF);
+    tft.setTextSize(3);
+    tft.setCursor(10, 228);
+    tft.print("http://");
+    tft.print(ip);
+}
+
+void DisplayTFT::showBatteryLow() {
+    tft.fillScreen(ST77XX_BLACK);
+    tft.setTextColor(ST77XX_RED);
+    tft.setTextSize(4);
+    int16_t x1, y1;
+    uint16_t tw, th;
+    tft.getTextBounds("Vybita baterie", 0, 0, &x1, &y1, &tw, &th);
+    tft.setCursor((DISP_W - tw) / 2, (DISP_H - th) / 2);
+    tft.print("Vybita baterie");
+}
+
 void DisplayTFT::handleDraw(const DrawMsg& m) {
     uint16_t col = rgb565_from_hex(m.color);
     if (m.tool == "eraser") col = ST77XX_WHITE;

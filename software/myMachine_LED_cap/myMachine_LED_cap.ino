@@ -100,7 +100,8 @@ void checkBattery() {
         if (g_battFiltered < BATT_RAW_MIN) {
             Serial.println("Battery low! Entering deep sleep.");
             leds.clearAll();
-            display.clear(ST77XX_BLACK);
+            display.showBatteryLow();
+            delay(2000);
             esp_sleep_enable_timer_wakeup(BATT_SLEEP_RECHECK_US);
             esp_deep_sleep_start();
         }
@@ -137,7 +138,6 @@ void setup() {
     // Boot obrázek 5 s
     display.showImage(kid_67, KID_67_W, KID_67_H);
     delay(5000);
-    display.clear();
 
     // LED pásek – nastav výchozí náladu
     leds.begin();
@@ -150,10 +150,13 @@ void setup() {
     }
     motor.begin();
 
-    // Web server
+    // Web server – AP se spustí zde
     webui.begin(ssid, [](const DrawMsg& msg) {
         display.handleDraw(msg);
     });
+
+    // Info o připojení – zůstane na displeji dokud uživatel nepřepne mód
+    display.showConnectInfo(ssid, WIFI_PASS, WiFi.softAPIP().toString().c_str());
 
     Serial.println("Setup hotov.");
 }
@@ -161,8 +164,10 @@ void setup() {
 // ══════════════════════════════════════════════════════════════
 
 // ── SOS mód ───────────────────────────────────────────────────
-AppMode _lastMode     = (AppMode)255;   // vynutí inicializaci při prvním loop()
-Mood    _lastMood     = (Mood)255;
+// Info screen je na displeji po bootu – nechceme ho přepsat při prvním loop()
+// Displej se smaže teprve při přechodu z jiného módu do DRAWING
+AppMode _lastMode     = AppMode::DRAWING;
+Mood    _lastMood     = Mood::SMUTNY;
 
 bool    _sosBlue      = true;
 uint32_t _sosTimer    = 0;

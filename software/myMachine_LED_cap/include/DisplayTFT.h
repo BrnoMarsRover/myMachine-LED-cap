@@ -13,6 +13,8 @@ public:
     void showImage(const uint16_t* img, uint16_t w, uint16_t h);
     void clear(uint16_t color = ST77XX_WHITE);
     void handleDraw(const DrawMsg& m);
+    void showConnectInfo(const char* ssid, const char* pass, const char* ip);
+    void showBatteryLow();
 
 private:
     Adafruit_ST7796S tft = Adafruit_ST7796S(TFT_CS, TFT_DC, TFT_RST);
