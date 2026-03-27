@@ -195,7 +195,7 @@ TiltDir  _lastTiltDir = TiltDir::NONE;
 
 void handleBlinkr() {
     if (_lastMode != AppMode::BLINKR) {
-        display.showImage(car_img, CAR_IMG_W, CAR_IMG_H);
+        display.clear(ST77XX_BLACK);
         leds.clearAll();
     }
 
@@ -203,6 +203,11 @@ void handleBlinkr() {
     TiltDir  dir    = accel.getTiltDir();
     int      duty   = accel.getMotorDuty();
     uint32_t period = accel.getBlinkPeriod();
+
+    // Horizont čára: rovně = vodorovně, doleva = čára se kloní doprava
+    // getY() < 0 = tilt doleva → half_dy kladné → pravý konec výš
+    int half_dy = constrain((int)(-accel.getY() * 15.0f), -(DISP_H/2 - 20), (DISP_H/2 - 20));
+    display.drawHorizonLine(half_dy);
 
     // Motor – rychlost podle náklonu, směr podle levá/pravá
     motor.stop();

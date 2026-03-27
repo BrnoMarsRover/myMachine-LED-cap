@@ -15,12 +15,16 @@ public:
     void handleDraw(const DrawMsg& m);
     void showConnectInfo(const char* ssid, const char* pass, const char* ip);
     void showBatteryLow();
+    // Nakreslí horizont čáru – half_dy = kolik px se pravý konec zvedne / levý sníží
+    // Automaticky maže předchozí polohu. Reset při zavolání clear().
+    void drawHorizonLine(int half_dy);
 
 private:
     Adafruit_ST7796S tft = Adafruit_ST7796S(TFT_CS, TFT_DC, TFT_RST);
 
     bool penDown = false;
     int lastX = 0, lastY = 0;
+    int _lastHorizonDy = 32767;  // sentinel = ještě nebylo nakresleno
 
     static inline int mapX(int x) { return (x * DISP_W) / CANVAS_W; }
     static inline int mapY(int y) { return (y * DISP_H) / CANVAS_H; }

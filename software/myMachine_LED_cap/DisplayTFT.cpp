@@ -19,6 +19,7 @@ void DisplayTFT::showImage(const uint16_t* img, uint16_t w, uint16_t h) {
 void DisplayTFT::clear(uint16_t color) {
     tft.fillScreen(color);
     penDown = false;
+    _lastHorizonDy = 32767;
 }
 
 uint16_t DisplayTFT::rgb565_from_hex(const String& hex) {
@@ -102,6 +103,25 @@ void DisplayTFT::showBatteryLow() {
     tft.getTextBounds("Vybita baterie", 0, 0, &x1, &y1, &tw, &th);
     tft.setCursor((DISP_W - tw) / 2, (DISP_H - th) / 2);
     tft.print("Vybita baterie");
+}
+
+void DisplayTFT::drawHorizonLine(int half_dy) {
+    const int THICK = 5;
+    const int CY    = DISP_H / 2;  // 160
+
+    // Smazat předchozí čáru (kreslíme přes ni černou, o 2 px silnější)
+    if (_lastHorizonDy != 32767) {
+        int oy0 = constrain(CY + _lastHorizonDy, 0, DISP_H - 1);
+        int oy1 = constrain(CY - _lastHorizonDy, 0, DISP_H - 1);
+        drawThickLine(0, oy0, DISP_W - 1, oy1, ST77XX_BLACK, THICK + 2);
+    }
+
+    // Nakreslit novou čáru žlutě
+    int y0 = constrain(CY + half_dy, 0, DISP_H - 1);
+    int y1 = constrain(CY - half_dy, 0, DISP_H - 1);
+    drawThickLine(0, y0, DISP_W - 1, y1, 0xFFE0, THICK);  // žlutá
+
+    _lastHorizonDy = half_dy;
 }
 
 void DisplayTFT::handleDraw(const DrawMsg& m) {
