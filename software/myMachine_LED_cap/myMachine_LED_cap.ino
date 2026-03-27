@@ -189,9 +189,10 @@ void handleSos() {
 }
 
 // ── Blinkr mód ────────────────────────────────────────────────
-uint32_t _blinkTimer  = 0;
-bool     _blinkOn     = false;
-TiltDir  _lastTiltDir = TiltDir::NONE;
+uint32_t _blinkTimer   = 0;
+bool     _blinkOn      = false;
+TiltDir  _lastTiltDir  = TiltDir::NONE;
+uint32_t _horizonTimer = 0;
 
 void handleBlinkr() {
     if (_lastMode != AppMode::BLINKR) {
@@ -204,10 +205,13 @@ void handleBlinkr() {
     int      duty   = accel.getMotorDuty();
     uint32_t period = accel.getBlinkPeriod();
 
-    // Horizont čára: rovně = vodorovně, doleva = čára se kloní doprava
-    // getY() < 0 = tilt doleva → half_dy kladné → pravý konec výš
-    int half_dy = constrain((int)(-accel.getY() * 15.0f), -(DISP_H/2 - 20), (DISP_H/2 - 20));
-    display.drawHorizonLine(half_dy);
+    // Horizont čára – aktualizovat max. 10× za sekundu (100 ms), jinak bliká
+    if (millis() - _horizonTimer >= 100) {
+        _horizonTimer = millis();
+        // getY() < 0 = tilt doleva → half_dy kladné → pravý konec výš
+        int half_dy = constrain((int)(-accel.getY() * 15.0f), -(DISP_H/2 - 20), (DISP_H/2 - 20));
+        display.drawHorizonLine(half_dy);
+    }
 
     // Motor – rychlost podle náklonu, směr podle levá/pravá
     motor.stop();
@@ -234,19 +238,26 @@ void handleBlinkr() {
 
 // ── Smyčka ────────────────────────────────────────────────────
 void loop() {
+    // Zachytit mód na začátku iterace – g_mode/g_mood se mohou změnit
+    // asynchronně z AsyncWebServer tasku kdykoli během loopu. Kdybychom
+    // četli g_mode až na konci a zároveň tam updatovali _lastMode, přepnutí
+    // by se "ztratilo" a modeEntry by bylo vždy false.
+    AppMode currentMode = g_mode;
+    Mood    currentMood = g_mood;
+
     webui.loop();
     checkBattery();
 
-    switch (g_mode) {
+    switch (currentMode) {
         case AppMode::DRAWING: {
-            bool modeEntry = (_lastMode != AppMode::DRAWING);
-            bool moodChange = (g_mood != _lastMood);
+            bool modeEntry  = (_lastMode != AppMode::DRAWING);
+            bool moodChange = (currentMood != _lastMood);
             if (modeEntry) {
                 motor.stop();
                 display.clear(ST77XX_WHITE);
             }
             if (modeEntry || moodChange) {
-                const MoodColor& mc = MOOD_COLORS[(int)g_mood];
+                const MoodColor& mc = MOOD_COLORS[(int)currentMood];
                 leds.setAll(mc.r, mc.g, mc.b);
             }
             break;
@@ -260,6 +271,6 @@ void loop() {
             break;
     }
 
-    _lastMode = g_mode;
-    _lastMood = g_mood;
+    _lastMode = currentMode;
+    _lastMood = currentMood;
 }

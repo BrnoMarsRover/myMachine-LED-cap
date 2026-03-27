@@ -106,6 +106,8 @@ void DisplayTFT::showBatteryLow() {
 }
 
 void DisplayTFT::drawHorizonLine(int half_dy) {
+    if (half_dy == _lastHorizonDy) return;  // beze změny – nič nekreslit
+
     const int THICK = 5;
     const int CY    = DISP_H / 2;  // 160
 
