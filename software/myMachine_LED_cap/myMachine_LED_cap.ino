@@ -69,8 +69,9 @@ void initPins() {
 
 // ── Baterie ───────────────────────────────────────────────────
 float    g_battFiltered   = 0.0f;  // EMA filtrovaná ADC hodnota
-uint32_t _battSampleTimer = 0;     // timer vzorkování (1 s)
-uint32_t _battCheckTimer  = 0;     // timer ochranného checku (30 s)
+uint32_t _battSampleTimer = 0;
+uint32_t _battCheckTimer  = 0;
+int      _lowBattCount    = 0;     // počet po sobě jdoucích raw čtení pod prahem
 
 // Naprimuje EMA filtr průměrem z N vzorků
 void primeBattFilter(int samples = 10) {
@@ -82,28 +83,40 @@ void primeBattFilter(int samples = 10) {
     g_battFiltered = (float)(sum / samples);
 }
 
+void doBatteryLowShutdown() {
+    Serial.println("Battery low! Entering deep sleep.");
+    leds.clearAll();
+    display.showBatteryLow();
+    delay(2000);
+    esp_sleep_enable_timer_wakeup(BATT_SLEEP_RECHECK_US);
+    esp_deep_sleep_start();
+}
+
 void checkBattery() {
     uint32_t now = millis();
 
-    // Vzorkování každou 1 s – aktualizuj EMA filtr
+    // Vzorkování každou 1 s
     if (now - _battSampleTimer >= BATT_SAMPLE_INTERVAL_MS) {
         _battSampleTimer = now;
         int raw = analogRead(PIN_B_STATUS);
-        // EMA: alpha = 0.1 (delší časová konstanta díky hustšímu vzorkování)
-        g_battFiltered = 0.1f * raw + 0.9f * g_battFiltered;
+        // EMA alpha = 0.3 → konverguje za ~10–13 vzorků (vs. 30 s s alpha 0.1)
+        g_battFiltered = 0.3f * raw + 0.7f * g_battFiltered;
         Serial.printf("Battery raw: %d  filtered: %.0f\n", raw, g_battFiltered);
+
+        // Rychlý fallback: 3 po sobě jdoucí raw čtení pod prahem → okamžitě spát
+        if (raw < BATT_RAW_MIN) {
+            _lowBattCount++;
+            if (_lowBattCount >= 3) doBatteryLowShutdown();
+        } else {
+            _lowBattCount = 0;
+        }
     }
 
-    // Ochranný check každých 30 s
+    // EMA check každých 5 s (záloha pro pomalý pokles)
     if (now - _battCheckTimer >= BATT_CHECK_INTERVAL_MS) {
         _battCheckTimer = now;
         if (g_battFiltered < BATT_RAW_MIN) {
-            Serial.println("Battery low! Entering deep sleep.");
-            leds.clearAll();
-            display.showBatteryLow();
-            delay(2000);
-            esp_sleep_enable_timer_wakeup(BATT_SLEEP_RECHECK_US);
-            esp_deep_sleep_start();
+            doBatteryLowShutdown();
         }
     }
 }
